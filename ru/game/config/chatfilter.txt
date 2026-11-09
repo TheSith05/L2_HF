@@ -1,4 +1,4 @@
-# Example for <cr> and <lf>
+﻿# Example for <cr> and <lf>
 # (not allow players to confuse others by writing from beginning of the line)
 # \\r
 # \\n
