@@ -1,16 +1,16 @@
-name: l2j-mobius-1
+name: l2j-mobius
 services:
-  l2j-db:
+  l2-db:
     image: mariadb:11.4
     container_name: l2j-db
     restart: unless-stopped
     environment:
       MARIADB_ROOT_PASSWORD: root
     volumes:
-      - /mnt/nvme/l2mobius/mysql_data:/var/lib/mysql
-      - /mnt/nvme/l2mobius/server/db_installer:/sql
+      - ./mysql_data:/var/lib/mysql
+      - ./db_init:/docker-entrypoint-initdb.d:ro
 
-  l2j-login:
+  l2-login:
     image: eclipse-temurin:27-jdk
     container_name: l2j-login
     restart: unless-stopped
@@ -20,10 +20,10 @@ services:
     ports:
       - "2106:2106"
     volumes:
-      - /mnt/nvme/l2mobius/server:/server
+      - ./server:/server
     command: java -Dfile.encoding=UTF-8 -Xmx256m -jar ../libs/LoginServer.jar
 
-  l2j-game:
+  l2-game:
     image: eclipse-temurin:27-jdk
     container_name: l2j-game
     restart: unless-stopped
@@ -34,5 +34,5 @@ services:
     ports:
       - "7777:7777"
     volumes:
-      - /mnt/nvme/l2mobius/server:/server
+      - ./server:/server
     command: java -Dfile.encoding=UTF-8 -Xmx4G -jar ../libs/GameServer.jar
