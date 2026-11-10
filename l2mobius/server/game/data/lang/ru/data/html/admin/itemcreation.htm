@@ -1,0 +1,40 @@
+<html><title>Предметы</title><body>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню создания предметов</center></td>
+<td width=45><button value="Назад" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
+<table width=260><tr><td>Введите ID предмета, чтобы создать его. Используйте количество, если нужно больше одного.<font color="LEVEL">Внимание: Не используйте количество для нескладываемых предметов</font></td></tr></table><br>
+<center>
+<table width=270>
+<tr>
+<td>ID предмета:</td>
+<td>Количество:</td>
+<td></td>
+</tr>
+<tr>
+<td><edit var="itemid" width=50></td>
+<td><edit var="itemnum" width=70 type=number></td>
+<td><button value="Создать предмет" action="bypass -h admin_create_item $itemid $itemnum" width=140 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr><td></td><td></td><td><button value="Выдать предмет цели" action="bypass -h admin_give_item_target $itemid $itemnum" width=140 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td></tr>
+<tr><td></td><td></td><td><button value="Выдать предмет всем онлайн" action="bypass -h admin_give_item_to_all $itemid $itemnum" width=140 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td></tr>
+</table><br><br>
+<table width=270 cellpadding="4">
+<tr>
+<td>Тип монеты:</td>
+<td><combobox width=120 height=17 var=ebox list=Adena;AncientAdena;FestivalAdena;BlueEva;GoldEinhasad;SilverShilen;BloodyPaagrio;FantasyIsleCoin></td>
+</tr>
+<tr>
+<td>Количество:</td>
+<td><edit var="vbox" width=120 height=12 type=number></td>
+</tr>
+<tr>
+<td></td>
+<td><button value="Создать монету" action="bypass -h admin_create_coin $ebox $vbox" width=140 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</center>
+</body></html>

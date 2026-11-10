@@ -1,0 +1,35 @@
+<html><title>Меню обслуживания инстансов</title><body>
+<center>
+<table width=260><tr>
+<td width=40><button value="Главная" action="bypass admin_admin" width=40 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню создания инстансов</center></td>
+<td width=40><button value="Назад" action="bypass admin_html instancezone.htm" width=40 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<table width=260>
+<tr>
+<td><button value="Общие" action="bypass admin_html instancezone.htm" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Индивидуальные" action="bypass admin_html instancezone2.htm" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="ID шаблонов" action="bypass admin_instancezones" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
+<center>Персонаж:<br>
+<table width=260>
+<tr>
+<td></td>
+<td>Имя игрока</td>
+<td>ID шаблона</td>
+</tr>
+<tr>
+<td><button value="Очистить" action="bypass -h admin_instancezone_clear $playername $instanceid" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><edit var="playername" width=90></td>
+<td><edit var="instanceid" width=60></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td><button value="Список" action="bypass -h admin_instancezone $playername2" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><edit var="playername2" width=90></td>
+</tr>
+</table><br><br><br>
+<font color="LEVEL">Примечание: ID шаблонов также находятся в gameserver\data\InstanceNames.xml</font>
+</center>
+</body></html>

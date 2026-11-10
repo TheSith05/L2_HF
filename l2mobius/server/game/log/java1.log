@@ -1,0 +1,16 @@
+2026.11.09 16:38:07,281	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: ipconfig.xml does not exist, using automatic configuration...
+2026.11.09 16:38:07,492	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 172.22.0.0/16 address: 172.22.0.4
+2026.11.09 16:38:07,492	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2026.11.09 16:38:07,492	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 0.0.0.0/0 address: 77.51.46.253
+2026.11.09 16:38:07,499	INFO	3	org.l2jmobius.gameserver.config.ServerConfig	Loaded 6 Filter Words.
+2026.11.09 16:38:07,596	INFO	3	org.l2jmobius.gameserver.GameServer	------------------------------------------------=[ Database ]
+2026.11.09 16:38:07,903	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.
+2026.11.09 16:39:07,909	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Problem initializing connection pool.
+2026.11.09 16:39:07,919	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------=[ ThreadPool ]
+2026.11.09 16:39:07,920	INFO	3	org.l2jmobius.commons.threads.ThreadPool	ThreadPool: Initializing.
+2026.11.09 16:39:07,922	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 2 high priority threads.
+2026.11.09 16:39:07,927	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 8 total threads.
+2026.11.09 16:39:07,928	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...instant pool executor with 4 total threads.
+2026.11.09 16:39:07,967	INFO	3	org.l2jmobius.gameserver.GameServer	-----------------------------------------------=[ IdManager ]
+2026.11.09 16:40:07,971	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Could not get a connection.
+2026.11.09 16:40:07,974	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM account_gsdata WHERE account_gsdata.account_name NOT IN (SELECT account_name FROM characters) - java.lang.RuntimeException: Unable to obtain a database connection.

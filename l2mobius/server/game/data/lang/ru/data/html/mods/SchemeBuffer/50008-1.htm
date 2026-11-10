@@ -1,0 +1,14 @@
+<html><body>
+<font color="LEVEL">Вы можете создать до %max_schemes% схем.</font> Вам все понятно?<br1>
+Если нет, читайте, пока не поймете! Я не могу позволить себе идиотов...<br>
+Вы можете зарегистрировать новую схему, заполнив эту форму здесь!
+<center><table width=220>
+	<tr>
+		<td width="140"><edit var="name" width=140 height=15></td>
+		<td width="60"><button value="Создать" action="bypass npc_%objectId%_createscheme $name" width=75 height=21 back="L2UI_ch3.Btn1_normalOn" fore="L2UI_ch3.Btn1_normal"></td>
+	</tr>
+</table></center><br>
+Здесь перечислены ваши схемы и стоимость их использования.<br>
+%schemes%<br>
+<a action="bypass npc_%objectId%_menu">Назад</a>
+</body></html>

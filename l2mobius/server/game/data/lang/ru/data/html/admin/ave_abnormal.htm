@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title>Меню визуальных эффектов</title>
+</head>
+<body>
+	<center>
+		<table width="270">
+			<tr>
+				<td width="45">
+					<button value="Главная" action="bypass admin_admin" width="45" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td width="180">
+					<center>Визуальные эффекты</center>
+				</td>
+				<td width="45">
+					<button value="Назад" action="bypass admin_admin3" width="45" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table width="270">
+			<tr>
+				<td>
+					Значения:
+				</td>
+				<td>
+					<edit var="qbox" width="100" height="15">
+				</td>
+				<td>
+					<button value="Помощь" action="bypass admin_html help/abnormal.htm" width="40" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table width="260">
+			<tr>
+				<td>
+					<button value="Кровотечение" action="bypass -h admin_ave_abnormal DOT_BLEEDING $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Отравление" action="bypass -h admin_ave_abnormal DOT_POISON $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Огонь" action="bypass -h admin_ave_abnormal DOT_FIRE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Вода" action="bypass -h admin_ave_abnormal DOT_WATER $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Ветер" action="bypass -h admin_ave_abnormal DOT_WIND $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Земля" action="bypass -h admin_ave_abnormal DOT_SOIL $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Оглушение" action="bypass -h admin_ave_abnormal STUN $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Сон" action="bypass -h admin_ave_abnormal SLEEP $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Безмолвие" action="bypass -h admin_ave_abnormal SILENCE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Корни" action="bypass -h admin_ave_abnormal ROOT $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Паралич" action="bypass -h admin_ave_abnormal PARALYZE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Окаменение" action="bypass -h admin_ave_abnormal FLESH_STONE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Потеря МР" action="bypass -h admin_ave_abnormal DOT_MP $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Большая голова" action="bypass -h admin_ave_abnormal BIG_HEAD $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Пламя" action="bypass -h admin_ave_abnormal DOT_FIRE_AREA $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Смена текстуры" action="bypass -h admin_ave_abnormal CHANGE_TEXTURE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Большое тело" action="bypass -h admin_ave_abnormal BIG_BODY $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Плавающие корни" action="bypass -h admin_ave_abnormal FLOATING_ROOT $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Оглушение танца" action="bypass -h admin_ave_abnormal DANCE_ROOT $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Призрачное оглушение" action="bypass -h admin_ave_abnormal GHOST_STUN $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Скрытность" action="bypass -h admin_ave_abnormal STEALTH $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Припадок 1" action="bypass -h admin_ave_abnormal SEIZURE1 $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Припадок 2" action="bypass -h admin_ave_abnormal SEIZURE2 $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Магический круг" action="bypass -h admin_ave_abnormal MAGIC_SQUARE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Заморозка" action="bypass -h admin_ave_abnormal FREEZING $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Дрожь" action="bypass -h admin_ave_abnormal SHAKE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Ослепление" action="bypass -h admin_ave_abnormal BLIND $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Абсолютная защита" action="bypass -h admin_ave_abnormal ULTIMATE_DEFENCE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Увеличение Виталити" action="bypass -h admin_ave_abnormal VP_UP $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Реальная цель" action="bypass -h admin_ave_abnormal REAL_TARGET $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Метка смерти" action="bypass -h admin_ave_abnormal DEATH_MARK $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Страх" action="bypass -h admin_ave_abnormal TURN_FLEE $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					<button value="Сохранение Виталити" action="bypass -h admin_ave_abnormal VP_KEEP $qbox" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>

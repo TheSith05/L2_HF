@@ -1,0 +1,26 @@
+<html><body>
+<table width=270 cellspacing=0 cellpadding=0>
+	<tr>
+		<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		<td width=180><center>Панель генератора пакетов</center></td>
+		<td width=45><button value="Назад" action="bypass admin_forge" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+	</tr>
+</table><br><br>
+
+<center>
+	OP коды: %opcodes%<br1>
+	Формат: %opformat% %format%<br>
+
+	<table width=180 cellspacing=0 cellpadding=0>
+		%editors%
+	</table><br>
+
+	<table width=180 cellspacing=0 cellpadding=0>
+		<tr>
+			<td><button value="Клиенту" action="bypass -h admin_forge_send sc %send_bypass%" width=60 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Трансляция" action="bypass -h admin_forge_send sb %send_bypass%" width=60 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Серверу" action="bypass -h admin_forge_send cs %send_bypass%" width=60 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center>
+</body></html>

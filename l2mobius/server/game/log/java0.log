@@ -1,0 +1,442 @@
+2026.11.09 16:41:33,375	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: ipconfig.xml does not exist, using automatic configuration...
+2026.11.09 16:41:33,595	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 172.22.0.0/16 address: 172.22.0.4
+2026.11.09 16:41:33,596	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2026.11.09 16:41:33,596	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 0.0.0.0/0 address: 77.51.46.253
+2026.11.09 16:41:33,602	INFO	3	org.l2jmobius.gameserver.config.ServerConfig	Loaded 6 Filter Words.
+2026.11.09 16:41:33,710	INFO	3	org.l2jmobius.gameserver.GameServer	------------------------------------------------=[ Database ]
+2026.11.09 16:41:34,009	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.
+2026.11.09 16:41:34,303	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Initialized with a valid connection.
+2026.11.09 16:41:34,323	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------=[ ThreadPool ]
+2026.11.09 16:41:34,324	INFO	3	org.l2jmobius.commons.threads.ThreadPool	ThreadPool: Initializing.
+2026.11.09 16:41:34,326	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 2 high priority threads.
+2026.11.09 16:41:34,331	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 8 total threads.
+2026.11.09 16:41:34,331	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...instant pool executor with 4 total threads.
+2026.11.09 16:41:34,380	INFO	3	org.l2jmobius.gameserver.GameServer	-----------------------------------------------=[ IdManager ]
+2026.11.09 16:41:34,435	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM account_gsdata WHERE account_gsdata.account_name NOT IN (SELECT account_name FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.account_gsdata' doesn't exist
+2026.11.09 16:41:34,440	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_contacts WHERE character_contacts.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_contacts' doesn't exist
+2026.11.09 16:41:34,441	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_contacts WHERE character_contacts.contactId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_contacts' doesn't exist
+2026.11.09 16:41:34,444	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_friends WHERE character_friends.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_friends' doesn't exist
+2026.11.09 16:41:34,445	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_friends WHERE character_friends.friendId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_friends' doesn't exist
+2026.11.09 16:41:34,448	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_hennas WHERE character_hennas.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_hennas' doesn't exist
+2026.11.09 16:41:34,451	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_macroses WHERE character_macroses.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_macroses' doesn't exist
+2026.11.09 16:41:34,455	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_quests WHERE character_quests.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_quests' doesn't exist
+2026.11.09 16:41:34,457	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_recipebook WHERE character_recipebook.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_recipebook' doesn't exist
+2026.11.09 16:41:34,458	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_recipeshoplist WHERE character_recipeshoplist.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_recipeshoplist' doesn't exist
+2026.11.09 16:41:34,459	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_shortcuts WHERE character_shortcuts.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_shortcuts' doesn't exist
+2026.11.09 16:41:34,460	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_skills WHERE character_skills.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_skills' doesn't exist
+2026.11.09 16:41:34,461	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_skills_save WHERE character_skills_save.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_skills_save' doesn't exist
+2026.11.09 16:41:34,462	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_subclasses WHERE character_subclasses.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_subclasses' doesn't exist
+2026.11.09 16:41:34,463	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_raid_points WHERE character_raid_points.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_raid_points' doesn't exist
+2026.11.09 16:41:34,463	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_instance_time WHERE character_instance_time.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_instance_time' doesn't exist
+2026.11.09 16:41:34,464	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM items WHERE items.owner_id NOT IN (SELECT charId FROM characters) AND items.owner_id NOT IN (SELECT clan_id FROM clan_data) AND items.owner_id != -1 - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:41:34,465	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM items WHERE items.owner_id = -1 AND loc LIKE 'MAIL' AND loc_data NOT IN (SELECT messageId FROM messages WHERE senderId = -1) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:41:34,466	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM item_auction_bid WHERE item_auction_bid.playerObjId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_auction_bid' doesn't exist
+2026.11.09 16:41:34,467	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM item_attributes WHERE item_attributes.itemId NOT IN (SELECT object_id FROM items) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_attributes' doesn't exist
+2026.11.09 16:41:34,468	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM item_elementals WHERE item_elementals.itemId NOT IN (SELECT object_id FROM items) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_elementals' doesn't exist
+2026.11.09 16:41:34,469	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM cursed_weapons WHERE cursed_weapons.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.cursed_weapons' doesn't exist
+2026.11.09 16:41:34,470	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM heroes WHERE heroes.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.heroes' doesn't exist
+2026.11.09 16:41:34,470	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM olympiad_nobles WHERE olympiad_nobles.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_nobles' doesn't exist
+2026.11.09 16:41:34,471	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM olympiad_nobles_eom WHERE olympiad_nobles_eom.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_nobles_eom' doesn't exist
+2026.11.09 16:41:34,472	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM pets WHERE pets.item_obj_id NOT IN (SELECT object_id FROM items) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.pets' doesn't exist
+2026.11.09 16:41:34,472	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM seven_signs WHERE seven_signs.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.seven_signs' doesn't exist
+2026.11.09 16:41:34,473	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM merchant_lease WHERE merchant_lease.player_id NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.merchant_lease' doesn't exist
+2026.11.09 16:41:34,474	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_reco_bonus WHERE character_reco_bonus.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_reco_bonus' doesn't exist
+2026.11.09 16:41:34,475	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_data WHERE clan_data.leader_id NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,476	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_data WHERE clan_data.clan_id NOT IN (SELECT clanid FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,476	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM olympiad_fights WHERE olympiad_fights.charOneId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_fights' doesn't exist
+2026.11.09 16:41:34,477	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM olympiad_fights WHERE olympiad_fights.charTwoId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_fights' doesn't exist
+2026.11.09 16:41:34,478	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM heroes_diary WHERE heroes_diary.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.heroes_diary' doesn't exist
+2026.11.09 16:41:34,479	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_offline_trade WHERE character_offline_trade.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_trade' doesn't exist
+2026.11.09 16:41:34,479	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_offline_trade_items WHERE character_offline_trade_items.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_trade_items' doesn't exist
+2026.11.09 16:41:34,480	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_offline_play WHERE character_offline_play.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_play' doesn't exist
+2026.11.09 16:41:34,481	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_offline_play_group WHERE character_offline_play_group.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_play_group' doesn't exist
+2026.11.09 16:41:34,482	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_offline_play_group WHERE character_offline_play_group.leaderId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_play_group' doesn't exist
+2026.11.09 16:41:34,482	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_tpbookmark WHERE character_tpbookmark.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_tpbookmark' doesn't exist
+2026.11.09 16:41:34,489	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_variables WHERE character_variables.charId NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_variables' doesn't exist
+2026.11.09 16:41:34,490	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_privs WHERE clan_privs.clan_id NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_privs' doesn't exist
+2026.11.09 16:41:34,491	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_skills WHERE clan_skills.clan_id NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_skills' doesn't exist
+2026.11.09 16:41:34,492	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_subpledges WHERE clan_subpledges.clan_id NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_subpledges' doesn't exist
+2026.11.09 16:41:34,493	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_wars WHERE clan_wars.clan1 NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_wars' doesn't exist
+2026.11.09 16:41:34,494	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_wars WHERE clan_wars.clan2 NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_wars' doesn't exist
+2026.11.09 16:41:34,494	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clanhall_functions WHERE clanhall_functions.hall_id NOT IN (SELECT id FROM clanhall WHERE ownerId <> 0 union all SELECT clanHallId FROM siegable_clanhall WHERE ownerId <> 0) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clanhall_functions' doesn't exist
+2026.11.09 16:41:34,495	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM siege_clans WHERE siege_clans.clan_id NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:41:34,496	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM clan_notices WHERE clan_notices.clan_id NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_notices' doesn't exist
+2026.11.09 16:41:34,497	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM auction_bid WHERE auction_bid.bidderId NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction_bid' doesn't exist
+2026.11.09 16:41:34,497	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM forums WHERE forums.forum_owner_id NOT IN (SELECT clan_id FROM clan_data) AND forums.forum_parent=2 - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,498	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM forums WHERE forums.forum_owner_id NOT IN (SELECT charId FROM characters) AND forums.forum_parent=3 - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:41:34,499	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM posts WHERE posts.post_forum_id NOT IN (SELECT forum_id FROM forums) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.posts' doesn't exist
+2026.11.09 16:41:34,499	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM topic WHERE topic.topic_forum_id NOT IN (SELECT forum_id FROM forums) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.topic' doesn't exist
+2026.11.09 16:41:34,503	INFO	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Cleaned 0 elements in 0 seconds.
+2026.11.09 16:41:34,504	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE clan_data SET auction_bid_at = 0 WHERE auction_bid_at NOT IN (SELECT auctionId FROM auction_bid) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,505	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE clan_data SET new_leader_id = 0 WHERE new_leader_id <> 0 AND new_leader_id NOT IN (SELECT charId FROM characters) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,506	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE clan_subpledges SET leader_id=0 WHERE clan_subpledges.leader_id NOT IN (SELECT charId FROM characters) AND leader_id > 0 - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_subpledges' doesn't exist
+2026.11.09 16:41:34,506	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE castle SET taxpercent=0 WHERE castle.id NOT IN (SELECT hasCastle FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,507	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE characters SET clanid=0, clan_privs=0, wantspeace=0, subpledge=0, lvl_joined_academy=0, apprentice=0, sponsor=0, clan_join_expiry_time=0, clan_create_expiry_time=0 WHERE characters.clanid > 0 AND characters.clanid NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:41:34,508	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE clanhall SET ownerId=0, paidUntil=0, paid=0 WHERE clanhall.ownerId NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,509	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute update query: UPDATE fort SET owner=0 WHERE owner NOT IN (SELECT clan_id FROM clan_data) - java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,509	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not update characters online status: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:41:34,521	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not clean expired timestamps from database: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_instance_time' doesn't exist
+2026.11.09 16:41:34,526	SEVERE	44	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not initialize used IDs for query SELECT object_id FROM items: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:41:34,527	SEVERE	44	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not initialize used IDs for query SELECT clan_id FROM clan_data: Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:41:34,527	SEVERE	44	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not initialize used IDs for query SELECT object_id FROM itemsonground: Table 'l2jmobiushighfive.itemsonground' doesn't exist
+2026.11.09 16:41:34,528	SEVERE	44	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not initialize used IDs for query SELECT messageId FROM messages: Table 'l2jmobiushighfive.messages' doesn't exist
+2026.11.09 16:41:34,530	SEVERE	43	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not initialize used IDs for query SELECT charId FROM characters: Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:41:34,531	INFO	3	org.l2jmobius.gameserver.managers.IdManager	IdManager: 102912 ids available.
+2026.11.09 16:41:34,532	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------=[ Scripting Engine ]
+2026.11.09 16:41:34,797	INFO	3	org.l2jmobius.gameserver.scripting.ScriptEngine	Loaded 421 files to exclude.
+2026.11.09 16:41:34,797	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------------=[ World ]
+2026.11.09 16:41:34,801	INFO	3	org.l2jmobius.commons.util.IXmlReader	InstanceManager: Multiverse Instance created.
+2026.11.09 16:41:34,801	INFO	3	org.l2jmobius.commons.util.IXmlReader	InstanceManager: Universe Instance created.
+2026.11.09 16:41:34,833	INFO	3	org.l2jmobius.commons.util.IXmlReader	InstanceManager: Loaded 160 instance names.
+2026.11.09 16:41:35,915	INFO	3	org.l2jmobius.commons.util.IXmlReader	InstanceManager: Loaded 142 instance templates.
+2026.11.09 16:41:38,032	INFO	3	org.l2jmobius.gameserver.entity.World	World: (256 by 272) World Region Grid set up.
+2026.11.09 16:41:38,275	INFO	3	org.l2jmobius.gameserver.data.xml.MapRegionData	MapRegionData: Loaded 57 map regions.
+2026.11.09 16:41:38,335	INFO	3	org.l2jmobius.gameserver.managers.GlobalVariablesManager	GlobalVariablesManager: Loaded 2 variables.
+2026.11.09 16:41:38,335	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------------=[ Data ]
+2026.11.09 16:41:38,419	INFO	3	org.l2jmobius.gameserver.data.xml.CategoryData	CategoryData: Loaded 180 categories.
+2026.11.09 16:41:38,574	INFO	3	org.l2jmobius.gameserver.data.xml.CubicData	CubicData: Loaded 109 cubic templates.
+2026.11.09 16:41:38,600	INFO	3	org.l2jmobius.commons.util.IXmlReader	SecondaryAuthData: Loaded 328 forbidden passwords.
+2026.11.09 16:41:38,600	INFO	3	org.l2jmobius.gameserver.GameServer	--------------------------------------------------=[ Skills ]
+2026.11.09 16:41:42,869	INFO	3	handlers.EffectMasterHandler	EffectMasterHandler: Loaded 165 effect handlers.
+2026.11.09 16:41:42,888	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantSkillGroupsData: Loaded 4 groups and 90 routes.
+2026.11.09 16:41:44,022	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 17176 Class Skills for 103 class skill trees.
+2026.11.09 16:41:44,024	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 76 sub-class skills.
+2026.11.09 16:41:44,025	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 77 transfer skills for 3 transfer skill trees.
+2026.11.09 16:41:44,025	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 117 fishing skills, 8 Dwarven only fishing skills.
+2026.11.09 16:41:44,025	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 3 collect skills.
+2026.11.09 16:41:44,030	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 94 clan skills, 64 for clan and 30 residential.
+2026.11.09 16:41:44,031	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 18 sub-pledge skills.
+2026.11.09 16:41:44,033	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 32 transform skills.
+2026.11.09 16:41:44,034	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 8 noble skills.
+2026.11.09 16:41:44,034	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 5 hero skills.
+2026.11.09 16:41:44,034	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 46 game master skills.
+2026.11.09 16:41:44,034	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillTreeData: Loaded 46 game master aura skills.
+2026.11.09 16:41:49,899	INFO	3	org.l2jmobius.gameserver.data.xml.SkillData	SkillData: Loaded 65965 Skill templates from XML files.
+2026.11.09 16:41:49,964	INFO	3	org.l2jmobius.gameserver.data.xml.PetSkillData	PetSkillData: Loaded 881 skills.
+2026.11.09 16:41:49,964	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------------=[ Items ]
+2026.11.09 16:41:50,902	INFO	3	org.l2jmobius.gameserver.data.xml.ItemData	ItemData: Highest item id used: 50000
+2026.11.09 16:41:50,908	INFO	3	org.l2jmobius.gameserver.data.xml.ItemData	ItemData: Loaded 11482 etc items.
+2026.11.09 16:41:50,908	INFO	3	org.l2jmobius.gameserver.data.xml.ItemData	ItemData: Loaded 3825 armor items.
+2026.11.09 16:41:50,909	INFO	3	org.l2jmobius.gameserver.data.xml.ItemData	ItemData: Loaded 3893 weapon items.
+2026.11.09 16:41:50,909	INFO	3	org.l2jmobius.gameserver.data.xml.ItemData	ItemData: Loaded 19200 items in total.
+2026.11.09 16:41:50,914	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemGroupsData: Loaded 4 item group templates.
+2026.11.09 16:41:50,915	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemGroupsData: Loaded 1 scroll group templates.
+2026.11.09 16:41:50,916	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemGroupsData: Max weapon enchant is set to 16.
+2026.11.09 16:41:50,916	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemGroupsData: Max armor enchant is set to 16.
+2026.11.09 16:41:50,917	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemGroupsData: Max accessory enchant is set to 16.
+2026.11.09 16:41:50,923	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemData: Loaded 63 enchant scrolls.
+2026.11.09 16:41:50,923	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemData: Loaded 20 support items.
+2026.11.09 16:41:52,235	INFO	3	org.l2jmobius.gameserver.data.xml.OptionData	OptionData: Loaded 24985 options.
+2026.11.09 16:41:52,249	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemOptionsData: Loaded 23 items and 1093 options.
+2026.11.09 16:41:52,254	INFO	3	org.l2jmobius.commons.util.IXmlReader	ElementalAttributeData: Loaded 30 elemental attribute items.
+2026.11.09 16:41:52,262	INFO	3	org.l2jmobius.commons.util.IXmlReader	EnchantItemHPBonusData: Loaded 6 enchant HP bonuses.
+2026.11.09 16:41:52,266	INFO	3	org.l2jmobius.gameserver.data.MerchantPriceConfigTable	MerchantPriceConfigTable: Loaded 28 merchant price configs.
+2026.11.09 16:41:53,490	WARNING	3	org.l2jmobius.commons.util.IXmlReader	Directory not found: /server/game/./data/buylists/custom
+2026.11.09 16:41:53,491	INFO	3	org.l2jmobius.gameserver.data.xml.BuyListData	BuyListData: Loaded 760 buyLists.
+2026.11.09 16:41:53,493	WARNING	3	org.l2jmobius.gameserver.data.xml.BuyListData	Failed to load buyList data from database.
+2026.11.09 16:41:54,358	INFO	3	org.l2jmobius.commons.util.IXmlReader	MultisellData: Loaded 373 multisell lists.
+2026.11.09 16:41:54,404	INFO	3	org.l2jmobius.commons.util.IXmlReader	RecipeData: Loaded 1000 recipes.
+2026.11.09 16:41:54,512	INFO	3	org.l2jmobius.commons.util.IXmlReader	ArmorSetData: Loaded 204 armor sets.
+2026.11.09 16:41:54,528	INFO	3	org.l2jmobius.commons.util.IXmlReader	FishData: Loaded 278 fishes.
+2026.11.09 16:41:54,532	INFO	3	org.l2jmobius.commons.util.IXmlReader	FishingMonstersData: Loaded 8 fishing monsters.
+2026.11.09 16:41:54,535	INFO	3	org.l2jmobius.commons.util.IXmlReader	FishingRodsData: Loaded 6 fishing rods.
+2026.11.09 16:41:54,564	INFO	3	org.l2jmobius.commons.util.IXmlReader	HennaData: Loaded 180 henna data.
+2026.11.09 16:41:54,566	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------=[ Characters ]
+2026.11.09 16:41:54,573	INFO	3	org.l2jmobius.gameserver.data.xml.ClassListData	ClassListData: Loaded 103 class data.
+2026.11.09 16:41:54,581	INFO	3	org.l2jmobius.gameserver.data.xml.InitialEquipmentData	InitialEquipmentData: Loaded 11 initial equipment data.
+2026.11.09 16:41:54,585	INFO	3	org.l2jmobius.gameserver.data.xml.InitialShortcutData	InitialShortcutData: Loaded 5 initial global shortcut data.
+2026.11.09 16:41:54,585	INFO	3	org.l2jmobius.gameserver.data.xml.InitialShortcutData	InitialShortcutData: Loaded 4 initial shortcut data.
+2026.11.09 16:41:54,586	INFO	3	org.l2jmobius.gameserver.data.xml.InitialShortcutData	InitialShortcutData: Loaded 0 macro presets.
+2026.11.09 16:41:54,591	INFO	3	org.l2jmobius.gameserver.data.xml.ExperienceData	ExperienceData: Loaded 86 levels.
+2026.11.09 16:41:54,594	INFO	3	org.l2jmobius.gameserver.data.xml.ExperienceData	ExperienceData: Max Player Level is 85.
+2026.11.09 16:41:54,594	INFO	3	org.l2jmobius.gameserver.data.xml.ExperienceData	ExperienceData: Max Pet Level is 85.
+2026.11.09 16:41:54,597	INFO	3	org.l2jmobius.gameserver.data.xml.ExperienceLossData	ExperienceLossData: Loaded 85 levels.
+2026.11.09 16:41:54,603	INFO	3	org.l2jmobius.gameserver.data.xml.KarmaLossData	KarmaLossData: Loaded 85 modifiers.
+2026.11.09 16:41:54,605	INFO	3	org.l2jmobius.commons.util.IXmlReader	HitConditionBonusData: Loaded hit condition bonuses.
+2026.11.09 16:41:55,082	INFO	3	org.l2jmobius.gameserver.data.xml.PlayerTemplateData	PlayerTemplateData: Loaded 103 player templates.
+2026.11.09 16:41:55,085	INFO	3	org.l2jmobius.gameserver.data.xml.PlayerTemplateData	PlayerTemplateData: Loaded 52530 level up gain records.
+2026.11.09 16:41:55,092	WARNING	3	org.l2jmobius.gameserver.data.sql.CharInfoTable	CharInfoTable: Couldn't retrieve all char id/name/access: Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:41:55,095	INFO	3	org.l2jmobius.gameserver.data.sql.CharInfoTable	CharInfoTable: Loaded 0 char names.
+2026.11.09 16:41:55,105	INFO	3	org.l2jmobius.gameserver.data.xml.AdminData	AdminData: Loaded 10 access levels.
+2026.11.09 16:41:55,114	INFO	3	org.l2jmobius.gameserver.data.xml.AdminData	AdminData: Loaded 469 access commands.
+2026.11.09 16:41:55,121	WARNING	3	org.l2jmobius.gameserver.managers.RaidBossPointsManager	RaidBossPointsManager: Could not load raid points 
+2026.11.09 16:41:55,610	INFO	3	org.l2jmobius.commons.util.IXmlReader	PetDataTable: Loaded 49 pets.
+2026.11.09 16:41:55,612	WARNING	3	org.l2jmobius.gameserver.data.sql.CharSummonTable	CharSummonTable: Error while loading saved servitor: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_summons' doesn't exist
+2026.11.09 16:41:55,614	WARNING	3	org.l2jmobius.gameserver.data.sql.CharSummonTable	CharSummonTable: Error while loading saved pet: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.pets' doesn't exist
+2026.11.09 16:41:55,617	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------------=[ Clans ]
+2026.11.09 16:41:55,628	WARNING	3	org.l2jmobius.gameserver.communitybbs.BB.Forum	Data error on Forum 1 : Table 'l2jmobiushighfive.topic' doesn't exist
+2026.11.09 16:41:55,634	WARNING	3	org.l2jmobius.gameserver.communitybbs.BB.Forum	Data error on Forum 4 : Table 'l2jmobiushighfive.topic' doesn't exist
+2026.11.09 16:41:55,640	WARNING	3	org.l2jmobius.gameserver.communitybbs.BB.Forum	Data error on Forum 3 : Table 'l2jmobiushighfive.topic' doesn't exist
+2026.11.09 16:41:55,648	WARNING	3	org.l2jmobius.gameserver.communitybbs.BB.Forum	Data error on Forum 2 : Table 'l2jmobiushighfive.topic' doesn't exist
+2026.11.09 16:41:55,651	INFO	3	org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager	ForumsBBSManager: Loaded 4 forums. Last forum id used: 4
+2026.11.09 16:41:55,652	SEVERE	3	org.l2jmobius.gameserver.data.sql.ClanTable	Error restoring ClanTable.
+2026.11.09 16:41:55,654	INFO	3	org.l2jmobius.gameserver.data.sql.ClanTable	ClanTable: Restored 0 clans from the database.
+2026.11.09 16:41:55,656	SEVERE	3	org.l2jmobius.gameserver.data.sql.ClanTable	ClanTable: Error restoring clan wars data.
+2026.11.09 16:41:55,696	INFO	3	org.l2jmobius.gameserver.managers.CHSiegeManager	CHSiegeManager: Loaded 6 conquerable clan halls.
+2026.11.09 16:41:55,704	WARNING	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: AuctionManager.load(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,709	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,714	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,718	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,721	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,726	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,731	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,734	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,739	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,745	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,747	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,753	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,755	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,759	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,762	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,765	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,767	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,772	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,775	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,779	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,785	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,788	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,792	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,796	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,799	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,802	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,806	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,808	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,810	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,812	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,815	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,817	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,820	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,824	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,827	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,830	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,832	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,836	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,841	SEVERE	3	org.l2jmobius.gameserver.managers.ClanHallAuctionManager	ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+2026.11.09 16:41:55,842	INFO	3	org.l2jmobius.gameserver.data.sql.ClanHallTable	ClanHallTable: Loaded 0 clan halls
+2026.11.09 16:41:55,842	INFO	3	org.l2jmobius.gameserver.data.sql.ClanHallTable	ClanHallTable: Loaded 38 free clan halls
+2026.11.09 16:41:55,844	INFO	3	org.l2jmobius.gameserver.GameServer	-------------------------------------------------=[ Geodata ]
+2026.11.09 16:41:58,059	INFO	3	org.l2jmobius.gameserver.geoengine.GeoEngine	GeoEngine: Loaded 203 regions.
+2026.11.09 16:41:58,060	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------------=[ NPCs ]
+2026.11.09 16:41:58,105	INFO	3	org.l2jmobius.gameserver.managers.ZoneManager	ZoneManager 17 by 18 Zone Region Grid set up.
+2026.11.09 16:42:01,186	INFO	3	org.l2jmobius.commons.util.IXmlReader	NpcData: Loaded 10461 NPCs.
+2026.11.09 16:42:01,220	INFO	3	org.l2jmobius.commons.util.IXmlReader	NpcData: Loaded 23 custom NPCs.
+2026.11.09 16:42:01,226	INFO	3	org.l2jmobius.commons.util.IXmlReader	SkillLearnData: Loaded 256 skill learn data.
+2026.11.09 16:42:01,232	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Gigantic Chaos Golem(25512) status is 0.
+2026.11.09 16:42:01,233	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Queen Ant(29001) status is 0.
+2026.11.09 16:42:01,234	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Core(29006) status is 0.
+2026.11.09 16:42:01,234	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Orfen(29014) status is 0.
+2026.11.09 16:42:01,235	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Baium(29020) status is 0.
+2026.11.09 16:42:01,235	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Valakas(29028) status is 0.
+2026.11.09 16:42:01,236	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Antharas(29068) status is 0.
+2026.11.09 16:42:01,236	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Beleth(29118) status is 0.
+2026.11.09 16:42:01,237	INFO	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Loaded 8 Instances
+2026.11.09 16:42:01,447	INFO	3	org.l2jmobius.gameserver.managers.ZoneManager	ZoneManager: Loaded 32 zone classes and 2860 zones.
+2026.11.09 16:42:01,451	INFO	3	org.l2jmobius.gameserver.managers.ZoneManager	ZoneManager: Last static id 200224.
+2026.11.09 16:42:01,582	INFO	3	org.l2jmobius.commons.util.IXmlReader	DoorData: Loaded 1301 doors.
+2026.11.09 16:42:01,587	INFO	3	FenceData	FenceData: Loaded 1 fences.
+2026.11.09 16:42:01,604	INFO	3	org.l2jmobius.gameserver.data.xml.LevelUpCrystalData	Soul crystal data : Loaded 54
+2026.11.09 16:42:01,604	INFO	3	org.l2jmobius.gameserver.data.xml.LevelUpCrystalData	Npc leveling crystal data : Loaded 240
+2026.11.09 16:42:02,208	INFO	3	org.l2jmobius.gameserver.managers.WalkingManager	WalkingManager: Loaded 123 walking routes.
+2026.11.09 16:42:02,216	INFO	3	org.l2jmobius.commons.util.IXmlReader	StaticObjectData: Loaded 51 static object templates.
+2026.11.09 16:42:02,220	SEVERE	3	org.l2jmobius.gameserver.managers.ItemAuctionManager	ItemAuctionManager: Failed loading auctions.
+2026.11.09 16:42:02,230	SEVERE	3	org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance	ItemAuctionInstance: Failed loading auctions.
+2026.11.09 16:42:02,233	SEVERE	3	org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance	ItemAuctionInstance: Failed loading auctions.
+2026.11.09 16:42:02,235	SEVERE	3	org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance	ItemAuctionInstance: Failed loading auctions.
+2026.11.09 16:42:02,239	INFO	3	org.l2jmobius.gameserver.managers.ItemAuctionManager	ItemAuctionManager: Loaded 3 instance(s).
+2026.11.09 16:42:02,244	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,249	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,255	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,259	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,267	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,270	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,276	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,280	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,286	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Castle	Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+2026.11.09 16:42:02,288	INFO	3	org.l2jmobius.gameserver.managers.CastleManager	CastleManager: Loaded 9 castles
+2026.11.09 16:42:02,295	INFO	3	org.l2jmobius.gameserver.data.SchemeBufferTable	SchemeBufferTable: Loaded 8 categories and 142 entries.
+2026.11.09 16:42:02,299	WARNING	3	org.l2jmobius.gameserver.data.SchemeBufferTable	SchemeBufferTable: Failed to load buff schemes from database.
+2026.11.09 16:42:02,299	INFO	3	org.l2jmobius.gameserver.data.SchemeBufferTable	SchemeBufferTable: Loaded 0 players and 92 available skills.
+2026.11.09 16:42:02,301	WARNING	3	org.l2jmobius.gameserver.managers.GrandBossManager	GrandBossManager: Could not load grandboss_list table: Table 'l2jmobiushighfive.grandboss_list' doesn't exist
+2026.11.09 16:42:02,302	INFO	3	org.l2jmobius.gameserver.GameServer	------------------------------------------------=[ Olympiad ]
+2026.11.09 16:42:02,308	WARNING	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Error loading olympiad data from database: 
+2026.11.09 16:42:02,512	WARNING	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Error loading noblesse data from database: 
+2026.11.09 16:42:02,513	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Loading....
+2026.11.09 16:42:02,514	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Currently in Olympiad Period
+2026.11.09 16:42:02,514	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: 21 days, 19 hours and 17 mins until period ends.
+2026.11.09 16:42:02,514	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Next weekly change is in 6 days, 23 hours and 43 mins.
+2026.11.09 16:42:02,514	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Loaded 0 Nobles
+2026.11.09 16:42:02,517	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Competition Period Starts in 0 days, 1 hours and 18 mins.
+2026.11.09 16:42:02,525	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Olympiad	Olympiad System: Event starts/started: Mon Nov 09 18:00:02 UTC 2026
+2026.11.09 16:42:02,529	WARNING	3	org.l2jmobius.gameserver.mechanics.olympiad.Hero	Hero System: Could not load Heroes: Table 'l2jmobiushighfive.heroes' doesn't exist
+2026.11.09 16:42:02,530	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Hero	Hero System: Loaded 0 Heroes.
+2026.11.09 16:42:02,530	INFO	3	org.l2jmobius.gameserver.mechanics.olympiad.Hero	Hero System: Loaded 0 all time Heroes.
+2026.11.09 16:42:02,530	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------=[ Seven Signs ]
+2026.11.09 16:42:02,533	SEVERE	3	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns	SevenSigns: Unable to load Seven Signs data from database: Table 'l2jmobiushighfive.seven_signs' doesn't exist
+2026.11.09 16:42:02,534	INFO	3	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns	SevenSigns: Currently in the Quest Event Initialization period!
+2026.11.09 16:42:02,534	INFO	3	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns	SevenSigns: The competition, if the current trend continues, will end in a tie this week.
+2026.11.09 16:42:02,535	INFO	3	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns	SevenSigns: Next period change was in the past (server was offline), changing periods now!
+2026.11.09 16:42:02,539	INFO	3	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns	SevenSigns: Next period begins in 0 milliseconds
+2026.11.09 16:42:02,540	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------------=[ Cache ]
+2026.11.09 16:42:02,541	INFO	3	org.l2jmobius.gameserver.cache.HtmCache	Cache[HTML]: Running lazy cache.
+2026.11.09 16:42:02,546	WARNING	3	org.l2jmobius.gameserver.data.sql.CrestTable	There was an error while loading crests from database:
+2026.11.09 16:42:02,551	INFO	3	org.l2jmobius.gameserver.data.sql.CrestTable	CrestTable: Loaded 0 Crests.
+2026.11.09 16:42:02,554	INFO	32	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSignsFestival	SevenSignsFestival: The first Festival of Darkness cycle begins in 2 minute(s).
+2026.11.09 16:42:02,556	INFO	32	org.l2jmobius.gameserver.mechanics.sevensigns.SevenSignsFestival	SevenSignsFestival: The first Festival of Darkness cycle begins in 2 minute(s).
+2026.11.09 16:42:03,228	INFO	3	org.l2jmobius.gameserver.data.xml.TeleporterData	TeleporterData: Loaded 195 npc teleporters.
+2026.11.09 16:42:03,376	INFO	3	org.l2jmobius.gameserver.data.AugmentationData	AugmentationData: Loaded 33960 augmentations.
+2026.11.09 16:42:03,378	INFO	3	org.l2jmobius.gameserver.data.AugmentationData	AugmentationData: Loaded 2754 accessory augmentations.
+2026.11.09 16:42:03,387	WARNING	3	org.l2jmobius.gameserver.managers.CursedWeaponsManager	Could not restore CursedWeapons data: Table 'l2jmobiushighfive.cursed_weapons' doesn't exist
+2026.11.09 16:42:03,389	WARNING	3	org.l2jmobius.gameserver.managers.CursedWeaponsManager	Could not check CursedWeapons data: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:42:03,391	INFO	3	org.l2jmobius.gameserver.managers.CursedWeaponsManager	CursedWeaponsManager: Loaded : 2 cursed weapon(s).
+2026.11.09 16:42:04,072	INFO	3	org.l2jmobius.commons.util.IXmlReader	TransformData: Loaded 111 transform templates.
+2026.11.09 16:42:04,078	WARNING	3	org.l2jmobius.gameserver.data.BotReportTable	BotReportTable: Could not load reported char data!
+2026.11.09 16:42:04,080	INFO	3	org.l2jmobius.gameserver.GameServer	-------------------------------------------------=[ Scripts ]
+2026.11.09 16:42:04,085	WARNING	3	org.l2jmobius.gameserver.managers.AirShipManager	AirShipManager: Could not load airships table: Table 'l2jmobiushighfive.airships' doesn't exist
+2026.11.09 16:42:04,087	INFO	3	org.l2jmobius.gameserver.managers.AirShipManager	AirShipManager: Loaded 0 private airships
+2026.11.09 16:42:04,088	INFO	3	org.l2jmobius.gameserver.managers.SeedOfDestructionManager	Seed of Destruction Manager: Loaded. Current stage is: 1
+2026.11.09 16:42:04,090	INFO	3	org.l2jmobius.gameserver.managers.SeedOfInfinityManager	Seed of Infinity Manager: Loaded. Current stage is: 1
+2026.11.09 16:42:04,090	INFO	3	org.l2jmobius.gameserver.GameServer	Loading server scripts...
+2026.11.09 16:42:10,252	INFO	3	handlers.MasterHandler	Loading Handlers...
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	ActionClickHandler: Loaded 10 handlers.
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	ActionShiftHandler: Loaded 6 handlers.
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	AdminCommandHandler: Loaded 481 handlers.
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	BypassHandler: Loaded 53 handlers.
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	ChatHandler: Loaded 14 handlers.
+2026.11.09 16:42:10,347	INFO	3	handlers.MasterHandler	CommunityBoardHandler: Loaded 24 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	ItemHandler: Loaded 30 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	PunishmentHandler: Loaded 3 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	UserCommandHandler: Loaded 17 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	VoicedCommandHandler: Loaded 9 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	TargetHandler: Loaded 34 handlers.
+2026.11.09 16:42:10,348	INFO	3	handlers.MasterHandler	Handlers Loaded...
+2026.11.09 16:42:22,757	WARNING	3	org.l2jmobius.gameserver.managers.TerritoryWarManager	TerritoryWarManager: registration list error: Table 'l2jmobiushighfive.territory_registrations' doesn't exist
+2026.11.09 16:42:22,860	INFO	3	org.l2jmobius.commons.util.IXmlReader	NpcBuffersData: Loaded 33 buffers data.
+2026.11.09 16:42:23,000	INFO	3	ai.areas.ImperialTomb.FourSepulchers.FourSepulchers	[Four Sepulchers] Loaded 762 spawn zones data.
+2026.11.09 16:42:23,033	INFO	3	ai.areas.Hellbound.HellboundLoader	HellboundLoader: Loading Hellbound related scripts:
+2026.11.09 16:42:23,038	INFO	3	org.l2jmobius.commons.util.IXmlReader	HellboundPointData: Loaded 47 trust point reward data.
+2026.11.09 16:42:23,054	INFO	3	org.l2jmobius.commons.util.IXmlReader	HellboundSpawns: Loaded 598 Hellbound spawns.
+2026.11.09 16:42:23,056	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	HellboundEngine: Level: 11
+2026.11.09 16:42:23,056	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	HellboundEngine: Trust: 4000000
+2026.11.09 16:42:23,057	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	HellboundEngine: Status: unlocked.
+2026.11.09 16:42:23,202	INFO	3	org.l2jmobius.gameserver.managers.RaidBossSpawnManager	RaidBossSpawnManager: Loaded 188 Instances
+2026.11.09 16:42:23,202	INFO	3	org.l2jmobius.gameserver.managers.RaidBossSpawnManager	RaidBossSpawnManager: Scheduled 0 Instances
+2026.11.09 16:42:23,256	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Handy's Block Checker Event is enabled
+2026.11.09 16:42:23,260	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Fantasy Isle: MC show script starting at 10/11/2026 08:58:23 and is scheduled each next 4 hours.
+2026.11.09 16:42:23,262	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Fantasy Isle: Parade starting at 2026/11/09 17:20 and is scheduled each next 1 hours.
+2026.11.09 16:42:23,305	INFO	3	ai.areas.Gracia.GraciaLoader	GraciaLoader: Loading Gracia related scripts.
+2026.11.09 16:42:23,534	CONFIG	3	conquerablehalls.FortressOfTheDead.FortressOfTheDead	Fortress of the Dead siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,537	WARNING	3	conquerablehalls.FortressOfTheDead.FortressOfTheDead	FortressOfTheDead: Could not load siege attackers!
+2026.11.09 16:42:23,540	CONFIG	3	conquerablehalls.WildBeastReserve.WildBeastReserve	Beast Farm siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,541	WARNING	3	conquerablehalls.WildBeastReserve.WildBeastReserve	WildBeastReserve.loadAttackers()->Table 'l2jmobiushighfive.siegable_hall_flagwar_attackers' doesn't exist
+2026.11.09 16:42:23,543	CONFIG	3	conquerablehalls.BanditStronghold.BanditStronghold	Bandit StrongHold siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,545	WARNING	3	conquerablehalls.BanditStronghold.BanditStronghold	BanditStronghold.loadAttackers()->Table 'l2jmobiushighfive.siegable_hall_flagwar_attackers' doesn't exist
+2026.11.09 16:42:23,546	CONFIG	3	conquerablehalls.FortressOfResistance.FortressOfResistance	Fortress of Resistance siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,547	WARNING	3	conquerablehalls.FortressOfResistance.FortressOfResistance	FortressOfResistance: Could not load siege attackers!
+2026.11.09 16:42:23,552	CONFIG	3	conquerablehalls.DevastatedCastle.DevastatedCastle	Devastated Castle siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,554	WARNING	3	conquerablehalls.DevastatedCastle.DevastatedCastle	DevastatedCastle: Could not load siege attackers!
+2026.11.09 16:42:23,557	CONFIG	3	conquerablehalls.RainbowSpringsChateau.RainbowSpringsChateau	Rainbow Springs siege scheduled for Mon Nov 23 12:00:00 UTC 2026.
+2026.11.09 16:42:23,558	WARNING	3	conquerablehalls.RainbowSpringsChateau.RainbowSpringsChateau	RainbowSpringsChateau.loadAttackers()->Table 'l2jmobiushighfive.rainbowsprings_attacker_list' doesn't exist
+2026.11.09 16:42:23,819	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	TerritoryWarSuperClass: Siege date: Sun Nov 22 22:00:00 UTC 2026
+2026.11.09 16:42:23,857	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Master of Enchanting has passed... Ignored 
+2026.11.09 16:42:23,867	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Valentine Event has passed... Ignored 
+2026.11.09 16:42:23,872	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event L2 Day has passed... Ignored 
+2026.11.09 16:42:23,878	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Heavy Medal has passed... Ignored 
+2026.11.09 16:42:23,882	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Love Your Gatekeeper has passed... Ignored 
+2026.11.09 16:42:23,885	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Gift of Vitality has passed... Ignored 
+2026.11.09 16:42:23,889	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Saving Santa has passed... Ignored 
+2026.11.09 16:42:23,892	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Freya Celebration has passed... Ignored 
+2026.11.09 16:42:23,899	WARNING	3	org.l2jmobius.gameserver.mechanics.script.Quest	java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:42:23,900	WARNING	3	org.l2jmobius.gameserver.mechanics.script.Quest	java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:42:23,903	WARNING	3	org.l2jmobius.gameserver.mechanics.script.Quest	java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:42:23,903	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	Event Watermelon Ninja has passed... Ignored 
+2026.11.09 16:42:23,907	INFO	3	org.l2jmobius.gameserver.data.xml.SpawnData	SpawnData: Initializing spawns...
+2026.11.09 16:42:24,186	INFO	34	org.l2jmobius.gameserver.mechanics.script.Quest	HellboundEngine: Spawned 424 NPCs.
+2026.11.09 16:42:27,656	INFO	3	org.l2jmobius.gameserver.data.xml.SpawnData	SpawnData: 429 spawn groups initialized.
+2026.11.09 16:42:27,656	INFO	3	org.l2jmobius.gameserver.data.xml.SpawnData	SpawnData: 187 spawn files parsed.
+2026.11.09 16:42:27,657	INFO	3	org.l2jmobius.gameserver.data.xml.SpawnData	SpawnData: 40378 spawns have been initialized!
+2026.11.09 16:42:27,657	INFO	3	org.l2jmobius.gameserver.managers.DayNightSpawnManager	DayNightSpawnManager: Removed 0 day creatures
+2026.11.09 16:42:27,674	INFO	3	org.l2jmobius.gameserver.managers.DayNightSpawnManager	DayNightSpawnManager: Spawned 685 night creatures
+2026.11.09 16:42:27,678	INFO	3	org.l2jmobius.gameserver.managers.DimensionalRiftManager	DimensionalRiftManager: Loaded 7 room types with 56 rooms.
+2026.11.09 16:42:27,683	INFO	3	org.l2jmobius.gameserver.managers.DimensionalRiftManager	DimensionalRiftManager: Loaded 462 dimensional rift spawns, 0 errors.
+2026.11.09 16:42:27,683	INFO	3	org.l2jmobius.gameserver.GameServer	---------------------------------------------------=[ Siege ]
+2026.11.09 16:42:27,693	INFO	3	org.l2jmobius.gameserver.data.xml.SiegeScheduleData	SiegeScheduleData: Loaded 9 siege schedulers.
+2026.11.09 16:42:27,700	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Gludio: Sun Nov 22 16:00:00 UTC 2026
+2026.11.09 16:42:27,701	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,706	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Dion: Sun Nov 22 20:00:00 UTC 2026
+2026.11.09 16:42:27,708	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,712	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Giran: Sun Nov 22 16:00:00 UTC 2026
+2026.11.09 16:42:27,714	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,719	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Oren: Sun Nov 22 20:00:00 UTC 2026
+2026.11.09 16:42:27,720	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,724	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Aden: Sun Nov 22 16:00:00 UTC 2026
+2026.11.09 16:42:27,727	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,731	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Innadril: Sun Nov 22 20:00:00 UTC 2026
+2026.11.09 16:42:27,732	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,736	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Goddard: Sun Nov 22 16:00:00 UTC 2026
+2026.11.09 16:42:27,737	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,742	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Rune: Sun Nov 22 20:00:00 UTC 2026
+2026.11.09 16:42:27,745	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,749	INFO	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Siege of Schuttgart: Sun Nov 22 16:00:00 UTC 2026
+2026.11.09 16:42:27,750	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.Siege	Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+2026.11.09 16:42:27,869	INFO	3	org.l2jmobius.gameserver.managers.FortManager	FortManager: Loaded 21 fortress
+2026.11.09 16:42:27,873	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,885	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,890	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,895	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,901	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,905	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,910	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,915	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,920	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,926	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,932	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,937	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,944	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,949	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,954	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,959	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,965	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,969	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,975	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,980	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:27,986	WARNING	3	org.l2jmobius.gameserver.mechanics.siege.FortSiege	Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+2026.11.09 16:42:28,030	INFO	3	org.l2jmobius.gameserver.managers.CastleManorManager	CastleManorManager: Loaded 258 seeds.
+2026.11.09 16:42:28,031	WARNING	3	org.l2jmobius.gameserver.managers.CastleManorManager	CastleManorManager: Unable to load manor data!
+2026.11.09 16:42:28,035	INFO	3	org.l2jmobius.gameserver.managers.MercTicketManager	MercTicketManager: Loaded 0 Mercenary Tickets
+2026.11.09 16:42:28,036	INFO	3	org.l2jmobius.gameserver.managers.ScriptManager	ScriptManager: Loaded 539 quests.
+2026.11.09 16:42:28,036	INFO	3	org.l2jmobius.gameserver.managers.ScriptManager	ScriptManager: Loaded 308 scripts.
+2026.11.09 16:42:28,039	WARNING	3	org.l2jmobius.gameserver.managers.games.MonsterRaceManager	MonsterRace: Can't load history: Table 'l2jmobiushighfive.mdt_history' doesn't exist
+2026.11.09 16:42:28,039	INFO	3	org.l2jmobius.gameserver.managers.games.MonsterRaceManager	MonsterRace: loaded 0 records, currently on race #1
+2026.11.09 16:42:28,045	WARNING	3	org.l2jmobius.gameserver.managers.games.LotteryManager	Lottery: Could not restore lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+2026.11.09 16:42:28,049	WARNING	33	org.l2jmobius.gameserver.managers.games.LotteryManager	Lottery: Could restore lottery data: Table 'l2jmobiushighfive.items' doesn't exist
+2026.11.09 16:42:28,053	WARNING	3	org.l2jmobius.gameserver.managers.games.LotteryManager	Lottery: Could not store new lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+2026.11.09 16:42:28,062	WARNING	33	org.l2jmobius.gameserver.managers.games.LotteryManager	Lottery: Could not store finished lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+2026.11.09 16:42:28,162	INFO	3	org.l2jmobius.gameserver.GameServer	AutoSpawnHandler: Loaded 129 handlers in total.
+2026.11.09 16:42:28,167	WARNING	3	org.l2jmobius.gameserver.managers.FishingChampionshipManager	FishingChampionshipManager: can't restore fishing championship info: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+2026.11.09 16:42:28,171	WARNING	3	org.l2jmobius.gameserver.managers.FishingChampionshipManager	FishingChampionshipManager: can't update infos: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+2026.11.09 16:42:28,171	INFO	3	org.l2jmobius.gameserver.managers.FishingChampionshipManager	FishingChampionshipManager : new event period start.
+2026.11.09 16:42:28,178	INFO	3	org.l2jmobius.gameserver.managers.games.KrateisCubeManager	KrateisCubeManager: Loaded 3 arena templates.
+2026.11.09 16:42:28,245	INFO	3	org.l2jmobius.gameserver.managers.games.UndergroundColiseumManager	UndergroundColiseumManager: Loaded 5 coliseum arenas.
+2026.11.09 16:42:28,245	INFO	3	org.l2jmobius.gameserver.managers.games.UndergroundColiseumManager	UndergroundColiseumManager: Starts at 13/11/2026 21:00:00
+2026.11.09 16:42:28,247	WARNING	3	org.l2jmobius.gameserver.managers.games.UndergroundColiseumManager	UndergroundColiseumManager: Could not load underground_coliseum table
+2026.11.09 16:42:28,248	INFO	3	org.l2jmobius.gameserver.managers.DailyResetManager	DailyResetManager: Daily task will run now.
+2026.11.09 16:42:28,248	INFO	3	org.l2jmobius.gameserver.managers.DailyResetManager	Starting reset of daily tasks...
+2026.11.09 16:42:28,250	SEVERE	3	org.l2jmobius.gameserver.managers.DailyResetManager	DailyResetManager: Could not reset daily skill reuse: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_skills_save' doesn't exist
+2026.11.09 16:42:28,251	INFO	3	org.l2jmobius.gameserver.managers.DailyResetManager	Daily skill reuse cleaned.
+2026.11.09 16:42:28,252	SEVERE	3	org.l2jmobius.gameserver.managers.DailyResetManager	DailyResetManager: Could not reset Recommendations System: java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_reco_bonus' doesn't exist
+2026.11.09 16:42:28,254	WARNING	3	org.l2jmobius.gameserver.mechanics.script.Quest	CharacterBirthday: Error checking birthdays. Table 'l2jmobiushighfive.characters' doesn't exist
+2026.11.09 16:42:28,254	INFO	3	org.l2jmobius.gameserver.mechanics.script.Quest	CharacterBirthday 0 gifts sent.
+2026.11.09 16:42:28,254	INFO	3	org.l2jmobius.gameserver.managers.DailyResetManager	Daily tasks reset completed.
+2026.11.09 16:42:28,257	WARNING	3	org.l2jmobius.gameserver.managers.MailManager	MailManager: Error loading from database:
+2026.11.09 16:42:28,258	INFO	3	org.l2jmobius.gameserver.managers.MailManager	MailManager: Loaded 0 messages.
+2026.11.09 16:42:28,260	WARNING	3	org.l2jmobius.gameserver.managers.PunishmentManager	PunishmentManager: Error while loading punishments: Table 'l2jmobiushighfive.punishments' doesn't exist
+2026.11.09 16:42:28,261	INFO	3	org.l2jmobius.gameserver.managers.PunishmentManager	PunishmentManager: Loaded 0 active and 0 expired punishments.
+2026.11.09 16:42:28,262	INFO	3	org.l2jmobius.gameserver.GameServer	IdManager: Free ObjectID's remaining: 1879001322
+2026.11.09 16:42:28,264	INFO	3	org.l2jmobius.gameserver.data.sql.OfflineTraderTable	OfflineTraderTable: Loading offline traders...
+2026.11.09 16:42:28,265	WARNING	3	org.l2jmobius.gameserver.data.sql.OfflineTraderTable	OfflineTraderTable: Error while loading offline traders: 
+2026.11.09 16:42:28,267	INFO	51	org.l2jmobius.gameserver.util.DeadlockWatcher	DeadlockWatcher: Thread started.
+2026.11.09 16:42:30,355	INFO	3	org.l2jmobius.gameserver.GameServer	GameServer: Started, using 2225 of 4096 MB total memory.
+2026.11.09 16:42:30,355	INFO	3	org.l2jmobius.gameserver.GameServer	GameServer: Maximum number of connected players is 2000.
+2026.11.09 16:42:30,356	INFO	3	org.l2jmobius.gameserver.GameServer	GameServer: Server loaded in 56 seconds.
+2026.11.09 16:42:30,383	INFO	53	org.l2jmobius.gameserver.LoginServerThread	LoginServerThread: Connecting to login on l2j-login:9014
+2026.11.09 16:42:30,447	INFO	53	org.l2jmobius.gameserver.LoginServerThread	LoginServerThread: Registered on login as Server 2: Sieghardt

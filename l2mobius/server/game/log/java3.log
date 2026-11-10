@@ -1,0 +1,18 @@
+2026.11.09 16:29:29,290	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: ipconfig.xml does not exist, using automatic configuration...
+2026.11.09 16:29:29,503	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 172.22.0.0/16 address: 172.22.0.4
+2026.11.09 16:29:29,503	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2026.11.09 16:29:29,504	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 0.0.0.0/0 address: 77.51.46.253
+2026.11.09 16:29:29,511	INFO	3	org.l2jmobius.gameserver.config.ServerConfig	Loaded 6 Filter Words.
+2026.11.09 16:29:29,618	INFO	3	org.l2jmobius.gameserver.GameServer	------------------------------------------------=[ Database ]
+2026.11.09 16:29:29,895	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.
+2026.11.09 16:30:29,906	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Problem initializing connection pool.
+2026.11.09 16:30:29,914	INFO	3	org.l2jmobius.gameserver.GameServer	----------------------------------------------=[ ThreadPool ]
+2026.11.09 16:30:29,915	INFO	3	org.l2jmobius.commons.threads.ThreadPool	ThreadPool: Initializing.
+2026.11.09 16:30:29,918	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 2 high priority threads.
+2026.11.09 16:30:29,930	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 8 total threads.
+2026.11.09 16:30:29,930	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...instant pool executor with 4 total threads.
+2026.11.09 16:30:29,955	INFO	3	org.l2jmobius.gameserver.GameServer	-----------------------------------------------=[ IdManager ]
+2026.11.09 16:31:29,957	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Could not get a connection.
+2026.11.09 16:31:29,960	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM account_gsdata WHERE account_gsdata.account_name NOT IN (SELECT account_name FROM characters) - java.lang.RuntimeException: Unable to obtain a database connection.
+2026.11.09 16:32:29,961	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Could not get a connection.
+2026.11.09 16:32:29,964	WARNING	3	org.l2jmobius.gameserver.managers.DatabaseIdManager	DatabaseIdManager: Could not execute cleanup query: DELETE FROM character_contacts WHERE character_contacts.charId NOT IN (SELECT charId FROM characters) - java.lang.RuntimeException: Unable to obtain a database connection.

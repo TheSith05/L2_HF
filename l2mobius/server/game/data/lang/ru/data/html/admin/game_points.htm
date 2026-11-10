@@ -1,0 +1,41 @@
+<html>
+<title>Игровые очки</title>
+<body>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180>
+<center>Меню игровых очков</center>
+</td>
+<td width=45>
+<center><button value="Назад" action="bypass admin_admin6" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></center>
+</td>
+</tr>
+</table>
+<table height=60 width=270>
+<tr>
+<td>
+Игровые очки — это валюта, используемая во внутриигровом магазине (также известном как Prime Shop).
+</td>
+</tr>
+</table>
+<table width=270>
+<tr>
+<td width=70 align=right><font color="LEVEL">Значение:</font></td>
+<td>
+<edit var="qbox" width=120 height=15>
+</td>
+</tr>
+</table>
+<br>
+<table width=270>
+<tr>
+<td><button value="Добавить" action="bypass -h admin_add_game_points $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Вычесть" action="bypass -h admin_subtract_game_points $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Установить" action="bypass -h admin_set_game_points $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Количество" action="bypass -h admin_count_game_points" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

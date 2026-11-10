@@ -1,0 +1,36 @@
+<html><body>
+<table width=270><tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню осады</center></td>
+<td width=45><button value="Назад" action="bypass admin_siege" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><center>
+<br>Кланхолл: %clanhallName%<br1>Владелец кланхолла: %clanhallOwner%<br>
+<center>
+<edit var="box" width=120 height=15>
+</center>
+<br>
+<table><tr>
+<td><button value="Открыть двери" action="bypass -h admin_clanhallopendoors %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Закрыть двери" action="bypass -h admin_clanhallclosedoors %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Выдать кланхолл" action="bypass -h admin_clanhallset %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Забрать кланхолл" action="bypass -h admin_clanhalldel %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Начать осаду" action="bypass -h admin_chsiege_startSiege %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Завершить осаду" action="bypass -h admin_chsiege_endsSiege %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Добавить атакующего" action="bypass -h admin_chsiege_addAttacker %clanhallId% $box" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Удалить атакующего" action="bypass -h admin_chsiege_removeAttacker %clanhallId% $box" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Список атакующих" action="bypass -h admin_chsiege_listAttackers %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Очистить атакующих" action="bypass -h admin_chsiege_clearAttackers %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Установить дату осады" action="bypass -h admin_chsiege_setSiegeDate %clanhallId% $box" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Телепорт к себе" action="bypass -h admin_clanhallteleportself %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Перенести осаду" action="bypass -h admin_chsiege_forwardSiege %clanhallId%" width=135 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table></center>
+<br><font color="FF0000">
+Примечание:</font> Используйте поле для ввода названия клана, чтобы добавить/удалить его (можно сделать, выбрав в цель члена клана), или дату для установки осады. Дата должна быть в формате ДД-ММ-ГГГГ;ЧЧ:ММ.
+</body></html>

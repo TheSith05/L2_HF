@@ -1,0 +1,1890 @@
+Nov 09, 2026 4:41:53 PM org.l2jmobius.gameserver.data.xml.BuyListData load
+WARNING: Failed to load buyList data from database.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.buylists' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.xml.BuyListData.load(BuyListData.java:71)
+	at org.l2jmobius.gameserver.data.xml.BuyListData.<init>(BuyListData.java:54)
+	at org.l2jmobius.gameserver.data.xml.BuyListData$SingletonHolder.<clinit>(BuyListData.java:204)
+	at org.l2jmobius.gameserver.data.xml.BuyListData.getInstance(BuyListData.java:199)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:257)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.data.sql.CharInfoTable <init>
+WARNING: CharInfoTable: Couldn't retrieve all char id/name/access: Table 'l2jmobiushighfive.characters' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.characters' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.sql.CharInfoTable.<init>(CharInfoTable.java:48)
+	at org.l2jmobius.gameserver.data.sql.CharInfoTable$SingletonHolder.<clinit>(CharInfoTable.java:229)
+	at org.l2jmobius.gameserver.data.sql.CharInfoTable.getInstance(CharInfoTable.java:224)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:278)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.RaidBossPointsManager init
+WARNING: RaidBossPointsManager: Could not load raid points 
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_raid_points' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.RaidBossPointsManager.init(RaidBossPointsManager.java:65)
+	at org.l2jmobius.gameserver.managers.RaidBossPointsManager.<init>(RaidBossPointsManager.java:55)
+	at org.l2jmobius.gameserver.managers.RaidBossPointsManager$SingletonHolder.<clinit>(RaidBossPointsManager.java:276)
+	at org.l2jmobius.gameserver.managers.RaidBossPointsManager.getInstance(RaidBossPointsManager.java:271)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:280)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.communitybbs.BB.Forum load
+WARNING: Data error on Forum 1 : Table 'l2jmobiushighfive.topic' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.topic' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.load(Forum.java:126)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.vload(Forum.java:255)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4737)
+	at org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager.initRoot(ForumsBBSManager.java:67)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:81)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.communitybbs.BB.Forum load
+WARNING: Data error on Forum 4 : Table 'l2jmobiushighfive.topic' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.topic' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.load(Forum.java:126)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.vload(Forum.java:255)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4737)
+	at org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager.initRoot(ForumsBBSManager.java:67)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:81)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.communitybbs.BB.Forum load
+WARNING: Data error on Forum 3 : Table 'l2jmobiushighfive.topic' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.topic' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.load(Forum.java:126)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.vload(Forum.java:255)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4737)
+	at org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager.initRoot(ForumsBBSManager.java:67)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:81)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.communitybbs.BB.Forum load
+WARNING: Data error on Forum 2 : Table 'l2jmobiushighfive.topic' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.topic' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.load(Forum.java:126)
+	at org.l2jmobius.gameserver.communitybbs.BB.Forum.vload(Forum.java:255)
+	at java.base/java.util.concurrent.ConcurrentHashMap$KeySetView.forEach(ConcurrentHashMap.java:4737)
+	at org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager.initRoot(ForumsBBSManager.java:67)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:81)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.data.sql.ClanTable <init>
+SEVERE: Error restoring ClanTable.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:88)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.data.sql.ClanTable restoreClanWars
+SEVERE: ClanTable: Error restoring clan wars data.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_wars' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.restoreClanWars(ClanTable.java:506)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.<init>(ClanTable.java:113)
+	at org.l2jmobius.gameserver.data.sql.ClanTable$SingletonHolder.<clinit>(ClanTable.java:607)
+	at org.l2jmobius.gameserver.data.sql.ClanTable.getInstance(ClanTable.java:602)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:292)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager load
+WARNING: ClanHallAuctionManager: Exception: AuctionManager.load(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.load(ClanHallAuctionManager.java:104)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.<init>(ClanHallAuctionManager.java:91)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager$SingletonHolder.<clinit>(ClanHallAuctionManager.java:191)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.getInstance(ClanHallAuctionManager.java:186)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:100)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:41:55 PM org.l2jmobius.gameserver.managers.ClanHallAuctionManager initNPC
+SEVERE: ClanHallAuctionManager: Exception: Auction.initNPC(): Table 'l2jmobiushighfive.auction' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1499)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2321)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1369)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:120)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ClanHallAuctionManager.initNPC(ClanHallAuctionManager.java:174)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.load(ClanHallTable.java:102)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.<init>(ClanHallTable.java:60)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable$SingletonHolder.<clinit>(ClanHallTable.java:315)
+	at org.l2jmobius.gameserver.data.sql.ClanHallTable.getInstance(ClanHallTable.java:310)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:294)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.managers.ItemAuctionManager <init>
+SEVERE: ItemAuctionManager: Failed loading auctions.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.<init>(ItemAuctionManager.java:64)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager$SingletonHolder.<clinit>(ItemAuctionManager.java:171)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.getInstance(ItemAuctionManager.java:166)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:309)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance <init>
+SEVERE: ItemAuctionInstance: Failed loading auctions.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance.<init>(ItemAuctionInstance.java:173)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.<init>(ItemAuctionManager.java:106)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager$SingletonHolder.<clinit>(ItemAuctionManager.java:171)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.getInstance(ItemAuctionManager.java:166)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:309)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance <init>
+SEVERE: ItemAuctionInstance: Failed loading auctions.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance.<init>(ItemAuctionInstance.java:173)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.<init>(ItemAuctionManager.java:106)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager$SingletonHolder.<clinit>(ItemAuctionManager.java:171)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.getInstance(ItemAuctionManager.java:166)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:309)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance <init>
+SEVERE: ItemAuctionInstance: Failed loading auctions.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.item_auction' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.entity.item.auction.ItemAuctionInstance.<init>(ItemAuctionInstance.java:173)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.<init>(ItemAuctionManager.java:106)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager$SingletonHolder.<clinit>(ItemAuctionManager.java:171)
+	at org.l2jmobius.gameserver.managers.ItemAuctionManager.getInstance(ItemAuctionManager.java:166)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:309)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.siege.Castle load
+WARNING: Exception: loadCastleData(): Table 'l2jmobiushighfive.clan_data' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.clan_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.load(Castle.java:681)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.<init>(Castle.java:249)
+	at org.l2jmobius.gameserver.managers.CastleManager.loadInstances(CastleManager.java:327)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:310)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.data.SchemeBufferTable loadPlayerSchemes
+WARNING: SchemeBufferTable: Failed to load buff schemes from database.
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.buffer_schemes' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.data.SchemeBufferTable.loadPlayerSchemes(SchemeBufferTable.java:430)
+	at org.l2jmobius.gameserver.data.SchemeBufferTable.<init>(SchemeBufferTable.java:89)
+	at org.l2jmobius.gameserver.data.SchemeBufferTable$SingletonHolder.<clinit>(SchemeBufferTable.java:483)
+	at org.l2jmobius.gameserver.data.SchemeBufferTable.getInstance(SchemeBufferTable.java:326)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:311)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.managers.GrandBossManager initZones
+WARNING: GrandBossManager: Could not load grandboss_list table: Table 'l2jmobiushighfive.grandboss_list' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.grandboss_list' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.GrandBossManager.initZones(GrandBossManager.java:128)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:313)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.olympiad.Olympiad load
+WARNING: Olympiad System: Error loading olympiad data from database: 
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.load(Olympiad.java:188)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.<init>(Olympiad.java:168)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad$SingletonHolder.<clinit>(Olympiad.java:1418)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.getInstance(Olympiad.java:1413)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:317)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.olympiad.Olympiad load
+WARNING: Olympiad System: Error loading noblesse data from database: 
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.olympiad_nobles' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.load(Olympiad.java:254)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.<init>(Olympiad.java:168)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad$SingletonHolder.<clinit>(Olympiad.java:1418)
+	at org.l2jmobius.gameserver.mechanics.olympiad.Olympiad.getInstance(Olympiad.java:1413)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:317)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns restoreSevenSignsData
+SEVERE: SevenSigns: Unable to load Seven Signs data from database: Table 'l2jmobiushighfive.seven_signs' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.seven_signs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns.restoreSevenSignsData(SevenSigns.java:851)
+	at org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns.<init>(SevenSigns.java:149)
+	at org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns$SingletonHolder.<clinit>(SevenSigns.java:1742)
+	at org.l2jmobius.gameserver.mechanics.sevensigns.SevenSigns.getInstance(SevenSigns.java:402)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:321)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:02 PM org.l2jmobius.gameserver.data.sql.CrestTable load
+WARNING: There was an error while loading crests from database:
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.crests' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.data.sql.CrestTable.load(CrestTable.java:76)
+	at org.l2jmobius.gameserver.data.sql.CrestTable.<init>(CrestTable.java:49)
+	at org.l2jmobius.gameserver.data.sql.CrestTable$SingletonHolder.<clinit>(CrestTable.java:216)
+	at org.l2jmobius.gameserver.data.sql.CrestTable.getInstance(CrestTable.java:211)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:326)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:03 PM org.l2jmobius.gameserver.managers.CursedWeaponsManager restore
+WARNING: Could not restore CursedWeapons data: Table 'l2jmobiushighfive.cursed_weapons' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.cursed_weapons' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.restore(CursedWeaponsManager.java:169)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.init(CursedWeaponsManager.java:79)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.<init>(CursedWeaponsManager.java:67)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager$SingletonHolder.<clinit>(CursedWeaponsManager.java:423)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.getInstance(CursedWeaponsManager.java:418)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:332)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:03 PM org.l2jmobius.gameserver.managers.CursedWeaponsManager controlPlayers
+WARNING: Could not check CursedWeapons data: Table 'l2jmobiushighfive.items' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.controlPlayers(CursedWeaponsManager.java:213)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.init(CursedWeaponsManager.java:80)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.<init>(CursedWeaponsManager.java:67)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager$SingletonHolder.<clinit>(CursedWeaponsManager.java:423)
+	at org.l2jmobius.gameserver.managers.CursedWeaponsManager.getInstance(CursedWeaponsManager.java:418)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:332)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:04 PM org.l2jmobius.gameserver.data.BotReportTable loadReportedCharData
+WARNING: BotReportTable: Could not load reported char data!
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.bot_reported_char_data' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.BotReportTable.loadReportedCharData(BotReportTable.java:117)
+	at org.l2jmobius.gameserver.data.BotReportTable.<init>(BotReportTable.java:104)
+	at org.l2jmobius.gameserver.data.BotReportTable$SingletonHolder.<clinit>(BotReportTable.java:629)
+	at org.l2jmobius.gameserver.data.BotReportTable.getInstance(BotReportTable.java:443)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:334)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:04 PM org.l2jmobius.gameserver.managers.AirShipManager load
+WARNING: AirShipManager: Could not load airships table: Table 'l2jmobiushighfive.airships' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.airships' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.AirShipManager.load(AirShipManager.java:267)
+	at org.l2jmobius.gameserver.managers.AirShipManager.<init>(AirShipManager.java:121)
+	at org.l2jmobius.gameserver.managers.AirShipManager$SingletonHolder.<clinit>(AirShipManager.java:321)
+	at org.l2jmobius.gameserver.managers.AirShipManager.getInstance(AirShipManager.java:316)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:352)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:22 PM org.l2jmobius.gameserver.managers.TerritoryWarManager load
+WARNING: TerritoryWarManager: registration list error: Table 'l2jmobiushighfive.territory_registrations' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.territory_registrations' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.TerritoryWarManager.load(TerritoryWarManager.java:910)
+	at org.l2jmobius.gameserver.managers.TerritoryWarManager.<init>(TerritoryWarManager.java:123)
+	at org.l2jmobius.gameserver.managers.TerritoryWarManager$SingletonHolder.<clinit>(TerritoryWarManager.java:1885)
+	at org.l2jmobius.gameserver.managers.TerritoryWarManager.getInstance(TerritoryWarManager.java:1880)
+	at ai.others.MercenaryCaptain.MercenaryCaptain.<init>(MercenaryCaptain.java:78)
+	at ai.others.MercenaryCaptain.MercenaryCaptain.main(MercenaryCaptain.java:232)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.l2jmobius.gameserver.scripting.engine.ScriptExecutor.executeMainMethod(ScriptExecutor.java:198)
+	at org.l2jmobius.gameserver.scripting.engine.ScriptExecutor.executeScripts(ScriptExecutor.java:134)
+	at org.l2jmobius.gameserver.scripting.ScriptEngine.executeScriptList(ScriptEngine.java:199)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:360)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.Siege loadSiegeClan
+WARNING: Exception: loadSiegeClan(): Table 'l2jmobiushighfive.siege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.siege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.loadSiegeClan(Siege.java:1264)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.startAutoTask(Siege.java:1032)
+	at org.l2jmobius.gameserver.mechanics.siege.Siege.<init>(Siege.java:104)
+	at org.l2jmobius.gameserver.mechanics.siege.Castle.getSiege(Castle.java:940)
+	at org.l2jmobius.gameserver.managers.SiegeManager.getSieges(SiegeManager.java:287)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:373)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:27 PM org.l2jmobius.gameserver.mechanics.siege.FortSiege clearSiegeClan
+WARNING: Exception: clearSiegeClan(): Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fortsiege_clans' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.clearSiegeClan(FortSiege.java:507)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.checkAutoTask(FortSiege.java:849)
+	at org.l2jmobius.gameserver.mechanics.siege.FortSiege.<init>(FortSiege.java:243)
+	at org.l2jmobius.gameserver.mechanics.siege.Fort.getSiege(Fort.java:934)
+	at org.l2jmobius.gameserver.managers.FortManager.loadInstances(FortManager.java:191)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:375)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.CastleManorManager loadDb
+WARNING: CastleManorManager: Unable to load manor data!
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.castle_manor_production' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.CastleManorManager.loadDb(CastleManorManager.java:199)
+	at org.l2jmobius.gameserver.managers.CastleManorManager.<init>(CastleManorManager.java:99)
+	at org.l2jmobius.gameserver.managers.CastleManorManager$SingletonHolder.<clinit>(CastleManorManager.java:934)
+	at org.l2jmobius.gameserver.managers.CastleManorManager.getInstance(CastleManorManager.java:929)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:381)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.games.MonsterRaceManager loadHistory
+WARNING: MonsterRace: Can't load history: Table 'l2jmobiushighfive.mdt_history' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.mdt_history' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.games.MonsterRaceManager.loadHistory(MonsterRaceManager.java:446)
+	at org.l2jmobius.gameserver.managers.games.MonsterRaceManager.<init>(MonsterRaceManager.java:109)
+	at org.l2jmobius.gameserver.managers.games.MonsterRaceManager$SingletonHolder.<clinit>(MonsterRaceManager.java:663)
+	at org.l2jmobius.gameserver.managers.games.MonsterRaceManager.getInstance(MonsterRaceManager.java:658)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:395)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.games.LotteryManager$startLottery run
+WARNING: Lottery: Could not restore lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.lottery' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$startLottery.run(LotteryManager.java:129)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager.<init>(LotteryManager.java:71)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$SingletonHolder.<clinit>(LotteryManager.java:530)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager.getInstance(LotteryManager.java:525)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:396)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.games.LotteryManager$finishLottery run
+WARNING: Lottery: Could restore lottery data: Table 'l2jmobiushighfive.items' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.items' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$finishLottery.run(LotteryManager.java:279)
+	at org.l2jmobius.commons.threads.ThreadPool$RunnableWrapper.run(ThreadPool.java:289)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.games.LotteryManager$startLottery run
+WARNING: Lottery: Could not store new lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.lottery' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$startLottery.run(LotteryManager.java:200)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager.<init>(LotteryManager.java:71)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$SingletonHolder.<clinit>(LotteryManager.java:530)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager.getInstance(LotteryManager.java:525)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:396)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.games.LotteryManager$finishLottery run
+WARNING: Lottery: Could not store finished lottery data: Table 'l2jmobiushighfive.lottery' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.lottery' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.games.LotteryManager$finishLottery.run(LotteryManager.java:383)
+	at org.l2jmobius.commons.threads.ThreadPool$RunnableWrapper.run(ThreadPool.java:289)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1527)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.FishingChampionshipManager restoreData
+WARNING: FishingChampionshipManager: can't restore fishing championship info: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.restoreData(FishingChampionshipManager.java:110)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.<init>(FishingChampionshipManager.java:76)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.<clinit>(FishingChampionshipManager.java:57)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:409)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.FishingChampionshipManager shutdown
+WARNING: FishingChampionshipManager: can't update infos: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.fishing_championship' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.shutdown(FishingChampionshipManager.java:375)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager$finishChamp.run(FishingChampionshipManager.java:485)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.<init>(FishingChampionshipManager.java:83)
+	at org.l2jmobius.gameserver.managers.FishingChampionshipManager.<clinit>(FishingChampionshipManager.java:57)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:409)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.managers.MailManager load
+WARNING: MailManager: Error loading from database:
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.messages' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.managers.MailManager.load(MailManager.java:58)
+	at org.l2jmobius.gameserver.managers.MailManager.<init>(MailManager.java:50)
+	at org.l2jmobius.gameserver.managers.MailManager$SingletonHolder.<clinit>(MailManager.java:263)
+	at org.l2jmobius.gameserver.managers.MailManager.getInstance(MailManager.java:258)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:424)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+
+Nov 09, 2026 4:42:28 PM org.l2jmobius.gameserver.data.sql.OfflineTraderTable restoreOfflineTraders
+WARNING: OfflineTraderTable: Error while loading offline traders: 
+java.sql.SQLSyntaxErrorException: Table 'l2jmobiushighfive.character_offline_trade' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1311)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:111)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.l2jmobius.gameserver.data.sql.OfflineTraderTable.restoreOfflineTraders(OfflineTraderTable.java:193)
+	at org.l2jmobius.gameserver.GameServer.<init>(GameServer.java:444)
+	at org.l2jmobius.gameserver.GameServer.main(GameServer.java:530)
+

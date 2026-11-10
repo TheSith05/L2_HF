@@ -1,0 +1,22 @@
+<html><body>
+<font color="LEVEL">Ставки разрешены только в одном клан холле.</font> Когда ставка сделана, сумма адены <font color="LEVEL">списывается</font> из кланового хранилища на аукцион. <font color="LEVEL">10% от суммы ставки — это комиссия за транзакцию</font> и она не возвращается, даже если ставка отменена.<br>
+<font color="LEVEL">Цена ставки</font> должна быть выше минимальной цены (или предыдущей цены при перебивании ставки), и клан, предложивший самую высокую цену в конце аукциона, побеждает.<br>
+В настоящее время в клановом хранилище <font color="aaccff">%PLEDGE_ADENA%</font> аден. Минимальная сумма ставки составляет <font color="aaccff">%AGIT_AUCTION_MINBID%</font> аден.<br>
+Сколько вы хотите поставить?
+<table width=270 border=0>
+<tr>
+<td width=220 align=right><edit var=bidprice width=230 align=right type=number></td>
+<td width=40 align=right>адена</td>
+</tr>
+</table>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="%AGIT_LINK_BACK%" value="Назад" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h npc_%objectId%_bid $bidprice" value="Подтвердить" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</body></html>

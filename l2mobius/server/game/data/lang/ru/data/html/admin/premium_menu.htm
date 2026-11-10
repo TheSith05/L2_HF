@@ -1,0 +1,24 @@
+<html><title>Управление премиум-сервисом</title><body>
+<center>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Управление премиум-сервисом</center></td>
+<td width=45><button value="Назад" action="bypass admin_admin6" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<font color="LEVEL">Введите имя</font><br>
+<edit var="acc_name" width=200>
+<br>
+<br><button value="Добавить 1 месяц премиума" action="bypass -h admin_premium_add1 $acc_name" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_CT1.OlympiadWnd_DF_Reward">
+<button value="Добавить 2 месяца премиума" action="bypass -h admin_premium_add2 $acc_name" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_CT1.OlympiadWnd_DF_Reward">
+<button value="Добавить 3 месяца премиума" action="bypass -h admin_premium_add3 $acc_name" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_CT1.OlympiadWnd_DF_Reward">
+<br>
+<button value="Просмотр инфо о премиуме" action="bypass -h admin_premium_info $acc_name" width=200 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+<button value="Удалить премиум" action="bypass -h admin_premium_remove $acc_name" width=200 height=30  back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+<br>
+<font color="FF0000">Игроки могут использовать команду .premium<br1>
+для просмотра статуса аккаунта.</font>
+</center>
+</body></html>

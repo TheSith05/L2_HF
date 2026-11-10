@@ -1,0 +1,29 @@
+<html><body>
+<table width=270 border=0>
+<tr>
+<td width=90>Минимальная ставка</td>
+<td width=180><font color="aaccff">%AGIT_AUCTION_MINBID%</font> адена</td>
+</tr>
+<tr>
+<td>Цена ставки</td>
+<td><font color="aaccff">%AGIT_AUCTION_BID%</font> аден</td>
+</tr>
+<tr>
+<td>Дата закрытия аукциона</td>
+<td>%AGIT_AUCTION_END%</td>
+</tr>
+</table><br>
+Перебивание ставки возможно только после того, как ставка была сделана, или при повышении цены. При отмене ставки комиссия за транзакцию (<font color="LEVEL">10% от цены ставки</font>) не возвращается.<br>
+Перебивание ставки и отмена ставки могут быть выполнены через «Мои лоты» в верхнем меню.<br>
+Вы хотите сделать ставку?<br>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="%AGIT_LINK_BACK%" value="Назад" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h npc_%objectId%_bid1" value="Подтвердить" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</body></html>

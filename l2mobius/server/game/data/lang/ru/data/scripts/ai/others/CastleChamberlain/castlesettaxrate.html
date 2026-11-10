@@ -1,0 +1,17 @@
+<html><body>
+<font color="LEVEL">[Настройка налоговой ставки]</font><br>
+Текущая налоговая ставка: <font color="00FFFF">%tax_rate%%</font>. Завтрашняя налоговая ставка будет <font color="00FFFF">%next_tax_rate%%</font>.<br>
+Вы можете выбрать новую ставку в диапазоне от <font color="LEVEL">0% - %tax_limit%%</font>. Если вы выберете новую налоговую ставку, она вступит в силу в полночь того же дня.<br>
+Пожалуйста, обратите внимание, что налоговая ставка будет автоматически установлена на <font color="LEVEL">0%</font>, если вы нажмете кнопку "ОК", не вводя значение.<br><br>
+<center>
+<table width=170 height=27 bgcolor="CCCCCC">
+<tr>
+<td width=30 align=center>Ставка</td>
+<td width=50 align=right><edit type=number var="tax_rate" width=30 length=2></td><td width=15 align=left>%</td>
+<td>
+<button action="bypass -h Script CastleChamberlain set_tax $tax_rate" value="ОК" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+</td></tr>
+</table>
+<br><button action="bypass -h Script CastleChamberlain chamberlain-01.html" value="Отмена" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+</center>
+</body></html>

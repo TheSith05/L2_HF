@@ -1,0 +1,27 @@
+<html><body>
+Стандартная системная цена для этого клан холла составляет <font color="aaccff">%AGIT_LAST_PRICE%</font> аден, а последняя торговая цена была <font color="aaccff">%AGIT_LAST_PRICE%</font> аден.<br>
+Сумма, полученная по окончании аукциона, — это сумма, оставшаяся после вычета <font color="LEVEL">комиссии за транзакцию (10%)</font> из победной ставки. Какую стандартную цену аукциона (минимальную ставку) вы хотите установить?
+<table width=270 border=0>
+<tr>
+<td width=220 align=right><edit var=minbid width=230 align=right type=number></td>
+<td width=40 align=right>адена</td>
+</tr>
+</table>
+На сколько дней вы хотите запустить аукцион?
+<table width=270 border=0>
+<tr>
+<td width=270 align=right><combobox width=50 var=day list="7;3;1"></td>
+</tr>
+</table>
+Напишите описание клан холла. <multiedit var="comment" width=270>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="%AGIT_LINK_BACK%" value="Назад" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h npc_%objectId%_auction $day $minbid" value="Продажа" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</body></html>

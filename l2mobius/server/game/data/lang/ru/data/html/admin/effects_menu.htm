@@ -1,0 +1,60 @@
+<html><title>Панель эффектов</title><body>
+<center>
+<table width=270><tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню эффектов</center></td>
+<td width=45><button value="Назад" action="bypass admin_admin6" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<table width=270>
+<tr>
+<td>QuickBox:</td>
+<td><edit var="qbox" width=120 height=15></td>
+<td><button value="Помощь" action="bypass admin_html help/effects_menu.htm" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+На основе персонажа:<br1>
+<table width=270>
+<tr>
+<td><button value="Паралич" action="bypass -h admin_para_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Снять паралич" action="bypass -h admin_unpara_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Паралич всех" action="bypass -h admin_para_all_menu" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Снять паралич со всех" action="bypass -h admin_unpara_all_menu" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><button value="Аномалия" action="bypass admin_ave_abnormal $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Особый" action="bypass admin_ave_special $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Событие" action="bypass -h admin_ave_event $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Социальный" action="bypass -h admin_social_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Эффект" action="bypass -h admin_effect_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Трансформация" action="bypass -h admin_transform_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Маленькая голова" action="bypass -h admin_shrinkhead" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Большая голова" action="bypass -h admin_bighead" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Отображение эффекта" action="bypass -h admin_set_displayeffect_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br><br>
+На основе мира:<br1>
+<table width=270>
+<tr>
+<td><button value="Дневное небо" action="bypass -h admin_atmosphere_menu sky day 0" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Ночное небо" action="bypass -h admin_atmosphere_menu sky night 0" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Рассвет" action="bypass -h admin_atmosphere_menu signsky dawn 0" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Закат" action="bypass -h admin_atmosphere_menu signsky dusk 0" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Красное небо" action="bypass -h admin_atmosphere_menu sky red $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Землетрясение" action="bypass -h admin_earthquake_menu $qbox" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Звуки" action="bypass admin_play_sounds" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Группа мобов" action="bypass admin_mobmenu" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td></td><td></td>
+</tr></table><br><br>
+<br><br>
+</center>
+</body></html>

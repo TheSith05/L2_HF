@@ -1,0 +1,43 @@
+<html><title>Меню обслуживания инстансов</title><body>
+<center>
+<table width=270><tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню создания инстансов</center></td>
+<td width=45><button value="Назад" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<table width=260>
+<tr>
+<td><button value="Общие" action="bypass admin_html instancezone.htm" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Индивидуальные" action="bypass admin_html instancezone2.htm" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="ID шаблонов" action="bypass admin_instancezones" width=83 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
+Пример создания:<br1>
+Инстанс: [ 1 ] - Шаблон: [ demo.xml ]<br>
+<table width=260>
+<tr>
+<td></td>
+<td>Инстанс</td>
+<td>XML шаблона</td>
+</tr>
+<tr>
+<td><button value="Создать" action="bypass -h admin_createinstance $instanceid_create $templateid" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><edit var="instanceid_create" width=50></td>
+<td><edit var="templateid" width=80></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td><button value="Удалить" action="bypass -h admin_destroyinstance $instanceid_destroy $templateid" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><edit var="instanceid_destroy" width=50></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td><button value="Установить" action="bypass -h admin_setinstance $instanceid_set $templateid" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><edit var="instanceid_set" width=50></td>
+</tr>
+</table>
+<br><br>
+<button value="Список инстансов" action="bypass -h admin_listinstances" width=110 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"><br><br>
+<font color="LEVEL">ID => 300000: зарезервировано для динамических инстансов!</font>
+</center>
+</body></html>

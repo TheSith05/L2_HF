@@ -1,0 +1,105 @@
+<html><title>Игровая панель</title><body>
+<center>
+<table width=270 border=0 bgcolor="444444">
+<tr>
+<td><button value="Главная" action="bypass admin_admin" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Персонаж" action="bypass admin_admin6" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Игра" action="bypass admin_admin2" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="ГМ" action="bypass admin_admin7" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
+<table width=240>
+<tr>
+<td>QuickBox:</td>
+<td><edit var="qbox" width=120 height=15></td>
+<td><button value="Помощь" action="bypass admin_html help/game_menu.htm" width=45 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Управление кланом:<br1>
+<table width=240>
+<tr>
+<td><button value="Создать" action="bypass -h admin_pledge create $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Инфо" action="bypass -h admin_pledge info" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Установить уровень" action="bypass -h admin_pledge setlevel $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Удалить" action="bypass -h admin_pledge dismiss $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Репутация" action="bypass -h admin_pledge rep $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Ожидающие лидеры" action="bypass -h admin_clan_show_pending" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Войны:<br1>
+<table width=240>
+<tr>
+<td><button value="Замки / Холлы" action="bypass admin_siege" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Крепости" action="bypass admin_fortsiege" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Территориальные войны" action="bypass admin_territory_war" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Проклятое оружие:<br1>
+<table width=240>
+<tr>
+<td><button value="Инфо" action="bypass admin_cw_info_menu $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Добавить" action="bypass -h admin_cw_add $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Удалить" action="bypass -h admin_cw_remove $qbox" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Семь Печатей:<br1>
+<table width="240">
+<tr>
+<td><button value="Кузнец" action="bypass -h admin_mammon_find 1" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Торговец" action="bypass -h admin_mammon_find 2" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Респаун" action="bypass -h admin_mammon_respawn" width=82 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Поместье:<br1>
+<table width="125">
+<tr>
+<td><button value="Информация о поместье" action="bypass admin_manor" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Семена Грации:<br1>
+<table width="125">
+<tr>
+<td><button value="Информация о Грации" action="bypass admin_gracia_seeds" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Континент Hellbound:<br1>
+<table width="125">
+<tr>
+<td><button value="Информация о Hellbound" action="bypass admin_hellbound" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Великие Боссы:<br1>
+<table width="125">
+<tr>
+<td><button value="Информация о Великих Боссах" action="bypass admin_grandboss" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Олимпиада:<br1>
+<table width="125">
+<tr>
+<td><button value="Проверить Олимпиаду" action="bypass -h admin_checkolympiad" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Сохранить Олимпиаду" action="bypass -h admin_saveolymp" width="125" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Герои:<br1>
+<table width="250">
+<tr>
+<td><button value="Назначить героя" action="bypass -h admin_sethero" width="100" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Выдать невостребованный статус героя" action="bypass -h admin_givehero" width="150" height="20" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+</center>
+</body></html>

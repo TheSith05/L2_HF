@@ -1,0 +1,123 @@
+<html><title>Панель информации: %name%</title><body>
+<center>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Игрок: %name%</center></td>
+<td width=45><button value="Назад" action="bypass admin_show_characters 0" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<table width=240>
+<tr>
+<td><button value="Перейти" action="bypass -h admin_goto_char_menu %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Кикнуть" action="bypass -h admin_kick_menu %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Бан аккаунта" action="bypass -h admin_ban_acc %account%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Бан персонажа" action="bypass -h admin_ban_char %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Вернуть" action="bypass admin_recall_char_menu %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Навыки" action="bypass admin_show_skills" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Редактировать" action="bypass admin_edit_character" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Класс" action="bypass admin_setclass" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr><tr>
+<td><button value="Ур./Опыт/ОО" action="bypass admin_add_exp_sp_to_character" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Инстанс" action="bypass -h admin_instancezone %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Эффекты" action="bypass admin_getbuffs %name%" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Группа" action="bypass -h admin_partyinfo" width=65 height=18 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<table width=240 bgcolor="666666">
+<tr>
+<td width=120>Имя аккаунта: </td><td><font color="LEVEL"><a action="bypass -h admin_find_account %name%">%account%</a></font></td>
+</tr>
+<tr>
+<td>IP аккаунта: </td><td><font color="LEVEL"><a action="bypass -h admin_find_ip %ip%">%ip%</a></font></td>
+</tr>
+<tr>
+<td>HWID: </td><td><font color="LEVEL"><a action="bypass -h admin_hwid %hwid%">%hwid%</a></font></td>
+</tr>
+<tr>
+<td>Наказание: </td><td><font color="LEVEL"><a action="bypass -h admin_punishment player %name%">Инфо</a></font></td>
+</tr>
+<tr>
+<td>Протокол клиента: </td><td><font color="LEVEL">%protocol%</font></td>
+</tr>
+</table>
+<br>
+<br>
+<table width=240 bgcolor="666666">
+<tr>
+<td>Имя:</td><td>%name%</td><td><button value="Обновить" action="bypass -h admin_character_info %name%" width=60 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td>Клан:</td><td>%clan%</td>
+</tr>
+<tr>
+<td>Уровень:</td><td>%level%</td>
+</tr>
+<tr>
+<td>Класс:</td><td>%class%</td>
+</tr>
+<tr>
+<td>Базовый класс:</td><td>%baseclass%</td>
+</tr>
+<tr>
+<td>CP:</td><td> <font color="LEVEL">%currentcp%</font> / %maxcp%</td>
+</tr>
+<tr>
+<td>HP:</td><td> <font color="LEVEL">%currenthp%</font> / %maxhp%</td>
+</tr>
+<tr>
+<td>MP:</td><td><font color="LEVEL">%currentmp%</font> / %maxmp%</td>
+</tr>
+<tr>
+<td>Вес:</td><td>%currentload% / %maxload%</td>
+</tr>
+<tr>
+<td>Опыт:</td><td>%xp%</td>
+</tr>
+<tr>
+<td>ОО:</td><td>%sp%</td>
+</tr>
+<tr>
+<td>Дворянин:</td><td>%noblesse%</td>
+</tr>
+%inst%
+</table>
+<br>
+<table width=240>
+<tr>
+<td>PvP убийства: </td><td>%pvpkills%</td>
+<td>Карма: </td><td>%karma%</td>
+</tr>
+<tr>
+<td>PK убийства: </td><td>%pkkills%</td>
+<td>PvP флаг: </td><td>%pvpflag%</td>
+</tr>
+</table>
+<br>
+<table width=240 bgcolor="666666">
+<tr>
+<td>Физ. Атк.:</td><td>%patk%</td><td>Маг. Атк.:</td><td>%matk%</td>
+</tr>
+<tr>
+<td>Физ. Защ.:</td><td>%pdef%</td><td>Маг. Защ.:</td><td>%mdef%</td>
+</tr>
+<tr>
+<td>Точность:</td><td>%accuracy%</td><td>Уклонение:</td><td>%evasion%</td>
+</tr>
+<tr>
+<td>Крит. удар:</td><td>%critical%</td><td>Скорость:</td><td>%runspeed%</td>
+</tr>
+<tr>
+<td>Скор. Атк.:</td><td>%patkspd%</td><td>Скор. Маг.:</td><td>%matkspd%</td>
+</tr>
+</table>
+<br>
+Координаты: %x% %y% %z%<br1>
+Направление: %heading%<br1>
+ИИ: %ai%
+%autoplay%
+</center>
+</body></html>

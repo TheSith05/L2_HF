@@ -1,0 +1,89 @@
+<html><title>Инфо об NPC</title><body>
+<center>
+<table width=270 border=0 bgcolor="444444">
+<tr>
+<td><button value="Убить" action="bypass -h admin_kill" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Удалить" action="bypass -h admin_delete" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Призвать" action="bypass -h admin_recall_npc" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Эффекты" action="bypass admin_getbuffs" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Квесты" action="bypass admin_show_quests %tmplid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Вид NPC" action="bypass NpcViewMod view %objid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Навыки" action="bypass NpcViewMod skills %objid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Список агрессии" action="bypass NpcViewMod aggrolist %objid%" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td></td>
+</tr>
+</table>
+<img src="L2UI.SquareWhite" width=260 height=1><br>
+<table width=270 border=0>
+<tr><td colspan="4"><table width=270 border=0><tr><td width=270><font color="LEVEL">Инфо об NPC</font> : %name% (<font color="LEVEL">%id%</font>) [<font color=00FF00>%lvl%</font> ур.]</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">ObjectId</font></td><td align=right width=170>%objid%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Тип:</font></td><td align=right width=170><font color=999999>%class%</font></td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Раса</font></td><td align=right width=170>%race%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Территория:</font></td><td align=right width=170>%territory%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Тип спавна:</font></td><td align=right width=170>%spawntype%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Файл спавна:</font></td><td align=right width=170>%spawnfile%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Точка спавна:</font></td><td align=right width=170>%spawn%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Локация:</font></td><td align=right width=170>%loc%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Направление:</font></td><td align=right width=170>%heading%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Радиус коллизии:</font></td><td align=right width=170>%collision_radius%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Высота коллизии:</font></td><td align=right width=170>%collision_height%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Дистанция:</font></td><td align=right width=170>2D: %loc2d%, 3D: %loc3d%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">Респаун:</font></td><td align=right width=170>%resp%</td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">Аггро:</font></td><td align=right width=170><font color=999999>%aggro%</font></td></tr></table></td></tr>
+<tr><td><table width=270 border=0 bgcolor=131210><tr><td width=100><font color="LEVEL">HP:</font></td><td align=right width=170><font color=FF4040>%hp%/%hpmax%</font></td></tr></table></td></tr>
+<tr><td><table width=270 border=0><tr><td width=100><font color="LEVEL">MP:</font></td><td align=right width=170><font color=6161FF>%mp%/%mpmax%</font></td></tr></table></td></tr>
+%ai_intention%
+%ai%
+%ai_type%
+%ai_clan%
+%ai_enemy_clan%
+%route%
+</table><br>
+
+<font color="LEVEL">Бой</font><br1>
+<table border="0" width="100%">
+<tr><td>Физ.Атк.</td><td>%patk%</td><td>Маг.Атк.</td><td>%matk%</td></tr>
+<tr><td>Физ.Защ.</td><td>%pdef%</td><td>Маг.Защ.</td><td>%mdef%</td></tr>
+<tr><td>Точность</td><td>%accu%</td><td>Уклонение</td><td>%evas%</td></tr>
+<tr><td>Крит</td><td>%crit%</td><td>Скорость</td><td>%rspd%</td></tr>
+<tr><td>Ск.Атаки</td><td>%aspd%</td><td>Ск.Магии</td><td>%cspd%</td></tr>
+<tr><td>Тип атаки:</td><td>%atkType%</td><td>Дальность атк.</td><td>%atkRng%</td></tr>
+</table><br>
+
+<font color="LEVEL">Базовые статы</font><br1>
+<table border="0" width="100%">
+<tr>
+<td>СИЛ</td><td>%str%</td>
+<td>ЛВК</td><td>%dex%</td>
+<td>ВЫН</td><td>%con%</td>
+</tr>
+<tr>
+<td>ИНТ</td><td>%int%</td>
+<td>МДР</td><td>%wit%</td>
+<td>ДУХ</td><td>%men%</td>
+</tr>
+</table><br>
+
+<font color="LEVEL">Элементы</font><br1>
+<table border="0" width="100%">
+<tr>
+<td>Атк. Элем.</td><td>%ele_atk%</td>
+<td>Значение</td><td>%ele_atk_value%</td>
+</tr>
+<tr>
+<td>Огонь</td><td>%ele_dfire%</td>
+<td>Вода</td><td>%ele_dwater%</td>
+</tr>
+<tr>
+<td>Ветер</td><td>%ele_dwind%</td>
+<td>Земля</td><td>%ele_dearth%</td>
+</tr>
+<tr>
+<td>Святость</td><td>%ele_dholy%</td>
+<td>Тьма</td><td>%ele_ddark%</td>
+</tr>
+</table><br>
+<br><img src="L2UI.SquareWhite" width=260 height=1><br>
+</center></body></html>

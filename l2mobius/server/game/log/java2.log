@@ -1,0 +1,7 @@
+2026.11.09 16:34:23,092	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: ipconfig.xml does not exist, using automatic configuration...
+2026.11.09 16:34:23,334	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 172.22.0.0/16 address: 172.22.0.4
+2026.11.09 16:34:23,335	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 127.0.0.0/8 address: 127.0.0.1
+2026.11.09 16:34:23,335	INFO	3	org.l2jmobius.commons.util.IXmlReader	Network Config: Adding new subnet: 0.0.0.0/0 address: 77.51.46.253
+2026.11.09 16:34:23,341	INFO	3	org.l2jmobius.gameserver.config.ServerConfig	Loaded 6 Filter Words.
+2026.11.09 16:34:23,420	INFO	3	org.l2jmobius.gameserver.GameServer	------------------------------------------------=[ Database ]
+2026.11.09 16:34:23,725	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.

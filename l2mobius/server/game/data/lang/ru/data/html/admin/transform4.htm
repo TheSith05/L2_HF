@@ -1,0 +1,73 @@
+<html><title>Трансформация</title><body>
+<center>
+<table width=270>
+<tr>
+<td width=45><button value="Главная" action="bypass admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Меню трансформации</center></td>
+<td width=45><button value="Назад" action="bypass admin_admin3" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<table width="270">
+<tr>
+<td><button value="Страница 1" action="bypass admin_html transform.htm" width="65" height="18" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Страница 2" action="bypass admin_html transform2.htm" width="65" height="18" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Страница 3" action="bypass admin_html transform3.htm" width="65" height="18" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Страница 4" action="bypass admin_html transform4.htm" width="65" height="18" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<table width="270">
+<tr>
+<td>
+					Значения:
+				</td>
+<td><edit var="qbox" width="200" height="15" /></td>
+</tr>
+</table>
+<br>
+<table width="270">
+<tr>
+<td><button value="Отправить" action="bypass -h admin_transform_menu $qbox" width="40" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+<td><button value="Помощь" action="bypass admin_html help/transform.htm" width="40" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+<td><button value="Отменить трансформацию" action="bypass -h admin_untransform" width="90" height="21" back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></td>
+</tr>
+</table>
+<br>
+Трансформации наемников:<br1>
+<table width=260>
+<tr>
+<td><button value="Человек" action="bypass -h admin_transform_menu 10 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Темный Эльф" action="bypass -h admin_transform_menu 12 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Светлый Эльф" action="bypass -h admin_transform_menu 11 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Гном" action="bypass -h admin_transform_menu 14 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Деревня Орков" action="bypass -h admin_transform_menu 13 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Деревня Камаэль" action="bypass -h admin_transform_menu 15 $qbox" width=82 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+Боевые трансформации:<br1>
+<table width=260>
+<tr>
+<td><button value="Капитан Лучников" action="bypass -h admin_transform_menu 17 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Капитан Крепости" action="bypass -h admin_transform_menu 21 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Капитан Камаэль" action="bypass -h admin_transform_menu 19 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Капитан Стражи" action="bypass -h admin_transform_menu 16 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Магический Лидер" action="bypass -h admin_transform_menu 18 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Дракон Ли" action="bypass -h admin_transform_menu 20005 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="Страж Рассвета" action="bypass -h admin_transform_menu 113 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Дракон Карин" action="bypass -h admin_transform_menu 20006 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr><td><button value="Рыцарь Рассвета" action="bypass -h admin_transform_menu 20 $qbox" width=125 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</center>
+</body></html>
