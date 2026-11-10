@@ -1,0 +1,16 @@
+2026.11.09 16:29:19,707	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.
+2026.11.09 16:30:19,735	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Problem initializing connection pool.
+2026.11.09 16:30:19,744	INFO	3	org.l2jmobius.commons.threads.ThreadPool	ThreadPool: Initializing.
+2026.11.09 16:30:19,752	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 2 total threads.
+2026.11.09 16:30:19,752	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...instant pool executor with 2 total threads.
+2026.11.09 16:30:19,754	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Loading LoginController...
+2026.11.09 16:30:20,277	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Cached 10 KeyPairs for RSA communication.
+2026.11.09 16:30:20,299	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Stored 20 keys for Blowfish communication.
+2026.11.09 16:30:20,423	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Loaded 127 server names.
+2026.11.09 16:31:20,426	SEVERE	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Could not get a connection.
+2026.11.09 16:31:20,428	SEVERE	3	org.l2jmobius.loginserver.data.GameServerTable	Error loading registered game servers!
+2026.11.09 16:31:20,428	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Loaded 0 registered Game Servers.
+2026.11.09 16:31:20,528	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Cached 10 RSA keys for Game Server communication.
+2026.11.09 16:31:20,529	INFO	3	org.l2jmobius.loginserver.LoginServer	Loaded 2 IP Bans.
+2026.11.09 16:31:20,536	INFO	3	org.l2jmobius.loginserver.LoginServer	Game server listener is listening on 0.0.0.0:9014.
+2026.11.09 16:31:20,549	INFO	3	org.l2jmobius.loginserver.LoginServer	LoginServer: Login client listener started on 0.0.0.0:2106.

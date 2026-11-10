@@ -1,0 +1,19 @@
+2026.11.09 16:41:12,300	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: HikariCP pool initialized successfully.
+2026.11.09 16:41:12,637	INFO	3	org.l2jmobius.commons.database.DatabaseFactory	Database: Initialized with a valid connection.
+2026.11.09 16:41:12,660	INFO	3	org.l2jmobius.commons.threads.ThreadPool	ThreadPool: Initializing.
+2026.11.09 16:41:12,669	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...scheduled pool executor with 2 total threads.
+2026.11.09 16:41:12,669	INFO	3	org.l2jmobius.commons.threads.ThreadPool	...instant pool executor with 2 total threads.
+2026.11.09 16:41:12,672	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Loading LoginController...
+2026.11.09 16:41:13,208	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Cached 10 KeyPairs for RSA communication.
+2026.11.09 16:41:13,238	INFO	3	org.l2jmobius.loginserver.controller.LoginController	Stored 20 keys for Blowfish communication.
+2026.11.09 16:41:13,342	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Loaded 127 server names.
+2026.11.09 16:41:13,391	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Loaded 1 registered Game Servers.
+2026.11.09 16:41:13,479	INFO	3	org.l2jmobius.loginserver.data.GameServerTable	Cached 10 RSA keys for Game Server communication.
+2026.11.09 16:41:13,480	INFO	3	org.l2jmobius.loginserver.LoginServer	Loaded 2 IP Bans.
+2026.11.09 16:41:13,484	INFO	3	org.l2jmobius.loginserver.LoginServer	Game server listener is listening on 0.0.0.0:9014.
+2026.11.09 16:41:13,498	INFO	3	org.l2jmobius.loginserver.LoginServer	LoginServer: Login client listener started on 0.0.0.0:2106.
+2026.11.09 16:42:30,441	INFO	37	org.l2jmobius.loginserver.GameServerThread	Updated Gameserver [2] Sieghardt IP's:
+2026.11.09 16:42:30,443	INFO	37	org.l2jmobius.loginserver.GameServerThread	172.22.0.4/172.22.0.0/16
+2026.11.09 16:42:30,444	INFO	37	org.l2jmobius.loginserver.GameServerThread	127.0.0.1/127.0.0.0/8
+2026.11.09 16:42:30,444	INFO	37	org.l2jmobius.loginserver.GameServerThread	77.51.46.253/0.0.0.0/0
+2026.11.09 16:43:14,691	INFO	37	org.l2jmobius.loginserver.GameServerThread	Server [2] Sieghardt is now marked as disconnected.
