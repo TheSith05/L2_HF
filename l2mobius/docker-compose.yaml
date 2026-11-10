@@ -1,6 +1,6 @@
 name: l2j-mobius
 services:
-  l2-db:
+  l2j-db:
     image: mariadb:11.4
     container_name: l2j-db
     restart: unless-stopped
@@ -10,7 +10,7 @@ services:
       - ./mysql_data:/var/lib/mysql
       - ./db_init:/docker-entrypoint-initdb.d:ro
 
-  l2-login:
+  l2j-login:
     image: eclipse-temurin:27-jdk
     container_name: l2j-login
     restart: unless-stopped
@@ -23,7 +23,7 @@ services:
       - ./server:/server
     command: java -Dfile.encoding=UTF-8 -Xmx256m -jar ../libs/LoginServer.jar
 
-  l2-game:
+  l2j-game:
     image: eclipse-temurin:27-jdk
     container_name: l2j-game
     restart: unless-stopped
