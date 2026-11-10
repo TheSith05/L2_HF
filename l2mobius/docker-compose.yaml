@@ -1,4 +1,4 @@
-name: l2j-mobius
+name: l2j-mobius-2.6
 services:
   l2j-db:
     image: mariadb:11.4
