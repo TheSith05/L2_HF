@@ -1,0 +1,38 @@
+name: l2j-mobius-1
+services:
+  l2j-db:
+    image: mariadb:11.4
+    container_name: l2j-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - /mnt/nvme/l2mobius/mysql_data:/var/lib/mysql
+      - /mnt/nvme/l2mobius/server/db_installer:/sql
+
+  l2j-login:
+    image: eclipse-temurin:27-jdk
+    container_name: l2j-login
+    restart: unless-stopped
+    working_dir: /server/login
+    depends_on:
+      - l2j-db
+    ports:
+      - "2106:2106"
+    volumes:
+      - /mnt/nvme/l2mobius/server:/server
+    command: java -Dfile.encoding=UTF-8 -Xmx256m -jar ../libs/LoginServer.jar
+
+  l2j-game:
+    image: eclipse-temurin:27-jdk
+    container_name: l2j-game
+    restart: unless-stopped
+    working_dir: /server/game
+    depends_on:
+      - l2j-db
+      - l2j-login
+    ports:
+      - "7777:7777"
+    volumes:
+      - /mnt/nvme/l2mobius/server:/server
+    command: java -Dfile.encoding=UTF-8 -Xmx4G -jar ../libs/GameServer.jar
